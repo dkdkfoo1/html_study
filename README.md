@@ -14,3 +14,5 @@
 <p>사이트 header - main - footer로 구성
 <P><strong>strong</strong>= 포인트 <em>em</em>= 강조
 <block qoute cite="https://webty.tistory.com/85">
+<hr>
+<h2>23.02.15 ol,ul태그 - HTML</h2>
