@@ -12,8 +12,8 @@
 <p>lnb(local navigation bar)<br>gnb의 하단에 배치된 서브 메뉴, 중분류 메뉴</p>
 <p>snb (side navigation bar)<br>페이지 내에 좌/우측에 일반적으로 존재하는 추가 메뉴</p>
 <p>fnb (footer navigation bar)<br>사이트 최하단 내비게이션<br>footer 영역에 존재하는 회사소개 저작권 등의 보조메뉴 (고객센터 번호/ 센터 위치/ 회사위치)</P>
-<p>사이트 header - main - footer로 구성
-<P><strong>strong</strong>= 포인트 <em>em</em>= 강조
+<p>사이트 header - main - footer로 구성</p>
+<p><strong>strong</strong>= 포인트 <em>em</em>= 강조</p>
 <block qoute cite="https://webty.tistory.com/85">
 <hr>
 <h2>23.02.15 ol,ul태그 - HTML</h2>
