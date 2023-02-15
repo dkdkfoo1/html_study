@@ -7,6 +7,7 @@
 <p>block과 inline 태그는 의미에 맞게 외부/내부 구조로 구성해서 사용해야 한다. (의미 중첨되지 않도록)<
 <hr>
 <h2>23.02.14 오늘태그시작 - HTML</h2>
+<h3>이 날 조퇴함.. 혼자 복습하기!</h3>
 <p>gnb(global navigation bar)<br>사이트 최상단 내비게이션 어떤 페이지에 들어가도 고정되어 있는 주 메뉴</p>
 <p>lnb(local navigation bar)<br>gnb의 하단에 배치된 서브 메뉴, 중분류 메뉴</p>
 <p>snb (side navigation bar)<br>페이지 내에 좌/우측에 일반적으로 존재하는 추가 메뉴</p>
