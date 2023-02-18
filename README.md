@@ -14,7 +14,7 @@
 <p>fnb (footer navigation bar)<br>사이트 최하단 내비게이션<br>footer 영역에 존재하는 회사소개 저작권 등의 보조메뉴 (고객센터 번호/ 센터 위치/ 회사위치)</P>
 <p>사이트 header - main - footer로 구성</p>
 <p><strong>strong</strong>= 포인트 <em>em</em>= 강조</p>
-<block qoute cite="https://webty.tistory.com/85">
+<blockqoute cite="https://webty.tistory.com/85"></blockquote>
 <hr>
 <h2>23.02.15 ol,ul태그 - HTML</h2>
 <ul>
@@ -62,5 +62,7 @@ http:// ←또한 절대경로임</li>
   <p>sup<sup>아래첨자</sup><p>
   <p><s>교체</s></p>
   <p><del>삭제</del><p>
+<blockquote cite="https://webty.tistory.com/85"></blockquote>
+<sup>blockquote는 외부에서 가져온 첨부 글을 블록 형태로 묶을 경우 사용.<sup>
   
 
