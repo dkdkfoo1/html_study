@@ -15,7 +15,8 @@
 <p>사이트 header - main - footer로 구성</p>
 <p><strong>strong</strong>= 포인트 <em>em</em>= 강조</p>
 <blockqoute cite="https://developer.mozilla.org/ko/docs/Web/HTML/Element/blockquote">
-  <p>인용문 태그</p>
+  인용문 태그
+  
 </blockquote>
 <hr>
 <h2>23.02.15 ol,ul태그 - HTML</h2>
