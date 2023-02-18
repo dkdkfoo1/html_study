@@ -62,7 +62,10 @@ http:// ←또한 절대경로임</li>
   <p>sup<sup>아래첨자</sup><p>
   <p><s>교체</s></p>
   <p><del>삭제</del><p>
-<blockquote cite="https://webty.tistory.com/85"></blockquote>
-<sup>blockquote는 외부에서 가져온 첨부 글을 블록 형태로 묶을 경우 사용.<sup>
+<blockquote>
+  blockquote는 외부에서 가져온 첨부 글을 블록 형태로 묶을 경우 사용합니다.
+  cite 속성으로 첨부 주소를 기록할 수 있습니다.
+</blockquote>
+
   
 
