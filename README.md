@@ -75,6 +75,6 @@ http:// ←또한 절대경로임</li>
 <hr>
 <p>hr은 수평선! 호라이즌! css에서는 표현하지 않고 숨기는 경우가 대부분. 사이트 각 영역을 구분할 때 사용. <sub>위에 사용함!</sub> </p>
 <p>&lt; &gt; &amp; &num; &nbsp; 특수문자 처리!</p>
-<a href="https://blog.naver.com/skyboy7863/222008028507"> 태그 정보 참고페이지 </a>
+<a href="https://blog.naver.com/skyboy7863/222008028507" name="html의 특수문자 및 기본 태그"> 태그 정보 참고페이지 </a>
   
 
