@@ -14,12 +14,14 @@
 <p>fnb (footer navigation bar)<br>사이트 최하단 내비게이션<br>footer 영역에 존재하는 회사소개 저작권 등의 보조메뉴 (고객센터 번호/ 센터 위치/ 회사위치)</P>
 <p>사이트 header - main - footer로 구성</p>
 <p><strong>strong</strong>= 포인트 <em>em</em>= 강조</p>
+<body>
 <blockqoute cite="https://blog.naver.com/mathesis_time/221958935747">blockquote 태그는 어떤 섹션을 통째로 인용할 때 쓰는 태그입니다.
 따옴표 없이 들여쓰기가 되고 인용문이 아닌 부분과 줄 간격이 넓어집니다. 
 짧은 인용문, 긴 인용문의 길이를 기준은 정확하게 정해져 있지는 않습니다.
 적당히 한 줄을 넘지 않는 문장은 q 태그를, 한 줄을 넘어가는 긴 문장이나 여러 문장은blockquote 태그를 쓰면 됩니다
 q 태그와 마찬가지로 출처를 나타내는 cite 속성을 쓸 수 있습니다.
 </blockquote>
+<body>
 <hr>
 <h2>23.02.15 ol,ul태그 - HTML</h2>
 <ul>
