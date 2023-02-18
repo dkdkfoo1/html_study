@@ -58,5 +58,5 @@ http:// ←또한 절대경로임</li>
 <p>p태그는 pharagraph내용, 단락의 뜻을 갖고있음</p>
 <strong>strong은 글자를 굵게 만들어준다. 중요도보다는 시각적인 의미!!! </strong><br>
 <em>em은 글자를 강조한다. strong과 다르게 시각적인 의미가 아닌, 중요한 포인트를 강조할 때 사용. strorng보다 em이 더 중요하다는 것! </em>
-<p>sub<sub>위첨자</sub><
+<p>sub<sub>위첨자</sub></
 
