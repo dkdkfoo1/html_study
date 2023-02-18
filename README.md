@@ -71,7 +71,7 @@ http:// ←또한 절대경로임</li>
   blockquote랑은 다르게 인라인임!!!
 </q>
 <p><code>
-  #dddddd 이건 어케 쓰는 걸까
+  code 태그는 코드사용에 적합한 글자로 만드는 태그
 </code></p>
 
   
