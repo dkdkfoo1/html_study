@@ -14,10 +14,7 @@
 <p>fnb (footer navigation bar)<br>사이트 최하단 내비게이션<br>footer 영역에 존재하는 회사소개 저작권 등의 보조메뉴 (고객센터 번호/ 센터 위치/ 회사위치)</P>
 <p>사이트 header - main - footer로 구성</p>
 <p><strong>strong</strong>= 포인트 <em>em</em>= 강조</p>
-<blockqoute cite="https://developer.mozilla.org/ko/docs/Web/HTML/Element/blockquote">
-  인용문 태그
-  
-</blockquote>
+<blockqoute cite="https://developer.mozilla.org/ko/docs/Web/HTML/Element/blockquote">인용문 태그</blockquote>
 <hr>
 <h2>23.02.15 ol,ul태그 - HTML</h2>
 <ul>
