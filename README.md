@@ -75,5 +75,13 @@ http:// ←또한 절대경로임</li>
 <p>hr은 수평선! 호라이즌! css에서는 표현하지 않고 숨기는 경우가 대부분. 사이트 각 영역을 구분할 때 사용. <sub>위에 사용함!</sub> </p>
 <p>&lt; &gt; &amp; &num; &nbsp; 특수문자 처리!</p>
 <a href="https://blog.naver.com/skyboy7863/222008028507"> 태그 정보 참고페이지 </a>
-  
-
+<hr>
+<h2>23.02.19 주말연습 - HTML</h2>
+<ul>
+  <li>gnb &lt; global navigation bar &gt; 사이트 최상단 네비게이션. 어떤 페이지레 들어가도 고정되어 있는 주 메뉴</li>
+  <li>lnb &lt; local navigation bar &gt; gnb의 하단에 배치된 서브 메뉴, 중분류 메뉴</li>
+  <li>snb &lt; side navigation bar &gt; 페이지 내의 좌/우측에 일반적으로 존재하는 추가 메뉴</li>
+  <li>fnb &lt; footer navigation bar &gt; 사이트 최하단 네비게이션 footer 영역에 존재하는 회사소개, 저작권등의 보조 메뉴 <br>
+  (고객센터 번호/ 센터 위치/ 회사위치)</li>
+  <li><em>사이드 header - main - footer로 구성</em></li>  
+</ul>
