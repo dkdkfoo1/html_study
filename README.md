@@ -91,3 +91,30 @@ http:// ←또한 절대경로임</li>
   <li> 다자인이 같으면 묶는다 (ul,ol)</li>
   <li> li는 연속된 두 개 이상의 것</li>
 </ol>
+<hr>
+<h2>23.02.20 - Table - HTML</h2>
+<table>
+  <thead>
+      <tr>
+        <th>구분</th>
+        <th>태그명</th>
+        <th>의미</th>
+      </tr>
+  </thead>
+  <tbody>
+     <tr>
+        <th>block</th>
+        <td><tr></td>
+        <td>가로행 태그</td>
+     </tr>
+     <tr>
+        <th>block</th>
+        <td><td></td>
+        <td>내용(열)태그</td>
+     </tr>
+     <tr>
+        <th>block</th>
+        <td><th></td>
+        <td>제목(열)</td>
+     </tr>
+  </tbody>
