@@ -105,7 +105,7 @@ http:// ←또한 절대경로임</li>
     </thead>
     <tbody>
        <tr>
-          <th>1</th>
+          <th>block</th>
           <td>2</td>
           <td>3</td>
        </tr>
