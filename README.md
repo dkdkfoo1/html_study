@@ -93,13 +93,14 @@ http:// ←또한 절대경로임</li>
 </ol>
 <hr>
 <h2>23.02.20 - Table - HTML</h2>
+
 <body>
   <table>
     <thead>
         <tr>
           <th>구분</th>
           <th>태그명</th>
-          <th></th>
+          <th>의미</th>
         </tr>
     </thead>
     <tbody>
