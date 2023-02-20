@@ -97,26 +97,26 @@ http:// ←또한 절대경로임</li>
   <table>
     <thead>
         <tr>
-          <th>구분</th>
-          <th>태그명</th>
-          <th>의미</th>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
         </tr>
     </thead>
     <tbody>
        <tr>
-          <th>block</th>
-          <td> <tr> </td>
-          <td>가로행 태그</td>
+          <th>1</th>
+          <td>2</td>
+          <td>3</td>
        </tr>
        <tr>
-          <th>block</th>
-          <td> <td> </td>
-          <td>내용(열)태그</td>
+          <th>1</th>
+          <td>2</td>
+          <td>3</td>
        </tr>
        <tr>
-          <th>block</th>
-          <td> <th> </td>
-          <td>제목(열)</td>
+          <th>1</th>
+          <td>2</td>
+          <td>3</td>
        </tr>
     </tbody>
   </table>
