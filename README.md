@@ -105,19 +105,17 @@ http:// ←또한 절대경로임</li>
     </thead>
     <tbody>
        <tr>
-          <th>block</th>
+          <th rowspan=3>block</th>
           <td>&lt;tr&gt;</td>
-          <td>3</td>
+          <td>가로행 태그</td>
        </tr>
        <tr>
-          <th>1</th>
-          <td>2</td>
-          <td>3</td>
+          <td>&lt;td&gt;</td>
+          <td>내용(열)태그</td>
        </tr>
        <tr>
-          <th>1</th>
-          <td>2</td>
-          <td>3</td>
+          <td>&lt;th&gt;</td>
+          <td>제목(열)태그</td>
        </tr>
     </tbody>
   </table>
