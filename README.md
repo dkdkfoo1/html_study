@@ -97,9 +97,9 @@ http:// ←또한 절대경로임</li>
   <table>
     <thead>
         <tr>
-          <th>1</th>
-          <th>2</th>
-          <th>3</th>
+          <th>구분</th>
+          <th>태그명</th>
+          <th></th>
         </tr>
     </thead>
     <tbody>
