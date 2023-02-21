@@ -129,5 +129,9 @@ http:// ←또한 절대경로임</li>
 <label><input type="radio" name="quize" value="id">1. id</label><br>
 <label><input type="radio" name="quize" value="class">2. class</label><br>
 <label><input type="radio" name="quize" value="name">3. name</label>
+  <hr>
+  <span>2.다음 중 선택양식에서 두개 이상의 답을 체크할 때 쓰는 type으로 옳은 것은</span><br>
+  <label><input type="radio" name="quize2" value="radio">1.radio</label><br>
+  <label><input type="radio" name="quize2" value="checkbox">1.checkbox</label><br>
 </fieldset>
 </form>
