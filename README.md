@@ -135,3 +135,6 @@ http:// ←또한 절대경로임</li>
   <label><input type="radio" name="quize2" value="checkbox">1.checkbox</label><br>
 </fieldset>
 </form>
+<hr>
+<h2>23.02.22-HTML-clonecoding</h2>
+<p>클론코딩 어렵다..</p>
