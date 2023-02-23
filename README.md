@@ -139,3 +139,7 @@ http:// ←또한 절대경로임</li>
 <h2>23.02.22-HTML-clonecoding</h2>
 <p>클론코딩 어렵다..</p>
 <p>그룹 잘 묶어야 css에서 디자인 코드 넣기가 편합니다.</p>
+<hr>
+<h2>23.02.23 CSS태그 시작- CSS</h2>
+<p>글자 적용 font-size:fjksdjfskd;</p>
+
