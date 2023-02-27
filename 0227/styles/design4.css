@@ -1,0 +1,17 @@
+.wrap {
+    background-color: aqua;
+    overflow:hidden;
+}
+.wrap a {
+    display:block; font-size: 5rem;
+    width:100px; height:100px;
+    background-color: yellow;
+    border:2px solid red;
+}
+/* .wrap a는 그룹으로 안묶어도 a,b,c,d 다 적용됨 */
+.wrap .a {float:left;}
+.wrap .b {float:left;}
+.wrap .c {float:left;}
+.wrap .d {float:right;}
+/* clear이전형제에게 들어간거 무효 */
+/* float는 모든 형제대상에게 줘야함 */

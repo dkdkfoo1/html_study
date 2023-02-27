@@ -1,0 +1,27 @@
+.path {
+    width:50vw; height:200vh;
+    background-color: lightgray;
+}
+.path dl {background-color: :yellow;}
+.path dl dt {}
+.path dl dd {background-color: pink;}
+.path dl dd span {}
+.path dl dd i {}
+.path dl dd span {
+    background-color: aqua;
+    display:inline-block;
+    margin:5px 10px 30px 0;
+    /* margin-left:20px;
+    margin:0 0 0 20px; */
+}
+.path dl dd a {
+    background-color: lime;
+    /* width:120px;  */
+    display:inline-block;
+    padding:10px 30px 10px 0;
+    /* a는 인라인 태그이기 땜시 display넣어준거 */
+    /* 0은 단위 안써도됨! */
+    /* width보다는 padding을 많이 쓴다. 계산도 쉽고, 사용자 편의성을 위해 버튼이 눌리는 부피를 늘려줌. */
+}
+.path dl dd .noto {font-family: 'Nanum Gothic', sans-serif;}
+.path dl dd .nanum {font-family: 'Noto Sans KR', sans-serif;}

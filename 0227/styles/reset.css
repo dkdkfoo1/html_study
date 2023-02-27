@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap');
 * {box-sizing:border-box;}
+/* 패딩을 줬을때 포함되는 값, (다시 알아보기) */
 html,body,h1,h2,h3,h4,h5,h6,
 p,ul,ol,li,blockquote,dl,dt,dd,address, video,
 strong, em, del, sup, sub,s,q,code,img,a
@@ -19,5 +20,6 @@ a {text-decoration:none; color:#000}
 table,tr,th,td {border-collapse:collapse;}
 button {cursor:pointer; border:none; background: none;}
 .skip {display:none;}
+/* 안보이게 처리하는 요소 (다시 알아보기) */
 .awesome::after,
 .awesome::before {font-weight: 600;}
