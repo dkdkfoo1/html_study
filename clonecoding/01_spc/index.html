@@ -14,6 +14,7 @@
     <!-- 외부스타일시트 -->
     <link href="./styles/reset.css" rel="stylesheet" type="text/css">
     <link href="./styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
@@ -23,7 +24,7 @@
         "#"은 임시 링크 ->아직 내 페이지를 안만들었기 때문!!!
         -->
         <nav>
-            <a href="#">COMPANY</a>
+            <a href="#" class="active">COMPANY</a>
             <a href="#">BRANDS</a>
             <a href="#">IR</a>
             <a href="#">SNS</a>
@@ -36,10 +37,17 @@
         </div>
     </header>
     <main>
-        <div class="bg">
+        <div class="bg_path border">
             <dl class="top">
-                <dt>현재 페이지 경로</dt>
-                <dd>HOME <span>Company</span> SPC삼립 소개 <em>경영이념</em></dd>
+                <dt class="skip">현재 페이지 경로</dt>
+                <dd>
+                    <i class="fa-solid fa-house" title="홈으로"></i>
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span>Company</span>
+                    <i class="fa-solid fa-chevron-right">
+                    </i>SPC삼립 소개<i class="fa-solid fa-chevron-right"></i>
+                    <em>경영이념</em>
+                </dd>
                 <!-- em옆에 뭐 넣으라고 css에서 명령가능. -->
                 <!-- span ->인라인 디자인 위치, 목적으로 사용가능. -->
             </dl>
@@ -71,13 +79,13 @@
         <div class="bg">
             <div class="contents">
                 <h2>GOAL</h2>
-                <ul>
-                    <li>매출 2.7조</li>
+                <ul class="goal_list">
+                    <li class="first">매출 2.7조</li>
                     <li>영업이익 5%</li>
-                    <li>기업가치 2.5조</li>
+                    <li class="last">기업가치 2.5조</li>
                 </ul>
                 <h2>STRATEGY</h2>
-                <ul>
+                <ul class="strategy_list">
                     <li>
                         <h3>Value Up</h3>
                         <p>브랜드 및 고부가 제품 라인업 강화</p>
