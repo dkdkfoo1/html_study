@@ -1,7 +1,7 @@
 main {
     background-color: aquamarine;
     width:850px; 
-    margin: 0 auto; 
+    margin:0 auto;
     border: 1px solid #DCDCDC
 }
 main .top {
@@ -49,4 +49,5 @@ main section p em {
     font-size: 30px;
     color: #53B927;
 }
+
 /* main section top 이런 큰 부분에는 배경을 먼저 넣는게 구분하기 편하다. */
