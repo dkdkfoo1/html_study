@@ -1,39 +1,52 @@
 main {
     background-color: aquamarine;
-    width:850px;
-    margin:0 auto;
+    width:850px; 
+    margin: 0 auto; 
+    border: 1px solid #DCDCDC
 }
 main .top {
-    background-color: blueviolet;
+    background-color: white;
     height: 100px;
+    border-bottom: 1px solid #DCDCDC;
 }
 main .top h1 {
-    font-size: 20px;
+    font-size: 1.250em;
     float:left;
     margin: 40px; 10px;
 }
 main .top dl {overflow: hidden;}
 main .top dl dd {
-    font-size: :14px;
+    font-size: :0.875em;
     float:right;
     margin: 40px; 10px;
 }
 main .top dl dd span {}
 main .top dl dd em {
+    font-weight: bold;
 }
-main section {background-color: coral;}
+main section {
+    background-color: white ;
+    padding: 5px; 0px;
+}
 main section h2 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-size: 17px;
-    color:blue;
+    margin: 60px 60px;
+    font-size: 1.063em;
+    color:#2753B9;
+    font-weight: bold;
 }
-main section > h2+p {
-    font-size: 30px;}
+main section p:nth-of-type(1) {
+    font-size: 1.875em;
+    line-height: 35px;
+    padding-left: 25px;
+}
 main section h2 {}
-main section p {margin: 100px 25px;}
+main section p {
+    font-size: 1em;
+    margin: 60px;
+    line-height: 26px;
+}
 main section p em {
     font-size: 30px;
-    color: green;
+    color: #53B927;
 }
 /* main section top 이런 큰 부분에는 배경을 먼저 넣는게 구분하기 편하다. */
