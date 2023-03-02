@@ -104,7 +104,7 @@ main .bg .contents .goal_list li {
     margin-left:-10px;
 }
 main .bg .contents ul li {
-    font-size:1.5rem;
+    font-size:1.5em;
     background-color:#fff;
 }
 main .bg .contents ul .first {
@@ -112,7 +112,7 @@ main .bg .contents ul .first {
 }
 main .bg .contents ul .last {background-color:#f3c300;}
 main .bg .contents h2 {
-    font-size:1.250em;
+    font-size:1.250rem;
     margin-bottom:30px;}
 main .bg .contents ul li h3 {
     font-size:1.063rem;

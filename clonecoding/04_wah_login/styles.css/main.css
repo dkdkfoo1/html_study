@@ -1,0 +1,194 @@
+/* 헤더 */
+header, main {
+    width:1080px;
+    margin: 0px auto;
+}
+header {
+    padding: 20px 0;
+}
+header form {
+    width:435px;
+    margin: 0 auto;
+    border: 3px solid #1e61a8; 
+    background-color: white;
+    border-radius: 5px;
+}
+header form fieldset {
+}
+header form fieldset .skip {
+}
+header form fieldset input {
+    width:90%;
+    float: left;
+    border: 0;
+}
+header form fieldset button {
+    background-color: #1e61a8;
+    width:30px; height: 30px; float: right;
+    color: white;}
+header form fieldset button::after {
+    content:'\f002'; 
+    display:block;
+}
+/* 메인 */
+main {
+    overflow: hidden;
+}
+main aside {
+    width:200px;
+    text-align: center;
+    float: left;
+}
+main aside h2 {
+    color: #1e61a8;
+    font-size: 25px;
+    padding: 20px 20px;
+
+}
+main aside .menu {
+    width:200px;
+    float:left;
+}
+main aside .menu a {
+    border-top: 1px solid #eee;
+    text-align: left;
+    padding: 20px 0 20px 10px;
+    display:block;
+}
+main aside .menu a:nth-child(1) {font-weight: bold;}
+main aside .menu a:nth-child(2) {
+    background-color: #1e61a8;
+    color: white;
+}
+main aside .menu a:nth-child(3) {
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+}
+/* 위에 왼쪽박스, 아래 멤버로그인 */
+main .container {
+    border: 1px solid #eee;
+    background-color: white;
+    width:848px; height: 900px;
+    margin-bottom: 20px;
+    float:right;
+}
+main .container .title_path {
+    padding: 30px; 20px;
+    overflow: hidden;
+    background-color: #eee;
+    border-bottom: 1px solid #999;
+}
+main .container .title_path h1 {
+    float: left;
+    font-weight: 700;
+}
+main .container .title_path dl {
+    float:right;
+}
+main .container .title_path dl dt {}
+main .container .title_path dl dd::before {
+    content:'\f015'; display: inline; font-weight: 600;
+}
+main .container .title_path dl dd img {}
+main .container .title_path dl dd span::before,
+main .container .title_path dl dd span::after {
+    content: '\f104'; display: inline-block; font-weight: 600;
+}
+/* 여기까지 회원관련 로그인 */
+main .container .contents {
+    padding: 25px;
+}
+main .container .contents .loginbox {
+    width:720px; margin:30px auto 50px; padding: 30px 0 30px 30px;
+    background-color: #eee;
+    border: 1px solid #888;
+    overflow: hidden;
+    background-image: url(../images/bg.png);
+    background-repeat: no-repeat;
+    background-position:95% 40%;
+}
+main .container .contents .loginbox {}
+main .container .contents .loginbox h2,
+main .container .contents .loginbox h2 span {letter-spacing: -0.03em;}
+main .container .contents .loginbox h2 span {
+    color: #1e61a8;
+}
+main .container .contents .loginbox h2,main .container .contents .loginbox h2 span {
+    font-size: 40px;
+    padding: 30px 30px;
+}
+main .container .contents .loginbox .left {
+    float: left;
+    margin:0 30px;
+}
+main .container .contents .loginbox > p {
+    color: #888;
+    font-size: 14px;
+    padding: 20px 0;
+}
+/* 자손들까지 인식해서 p가 다 패딩적용이 됨. 그래서 자식만 인식하라는 의미로 꺽쇠줌 */
+/* 멤버로그인주석 */
+main .container .contents .loginbox form {}
+main .container .contents .loginbox form fieldset {
+    padding: 30px 0;
+    border:0;
+}
+main .container .contents .loginbox form fieldset {overflow: hidden;}
+main .container .contents .loginbox form fieldset .left {float:left}
+main .container .contents .loginbox form fieldset .left {}
+main .container .contents .loginbox form fieldset .left li:first-child {margin-bottom: 20px;}
+main .container .contents .loginbox form fieldset .left li span {
+    display: inline-block;
+    width:70px;
+}
+main .container .contents .loginbox form fieldset .left li input {width:285px}
+/* 인라인이지만 인풋이나 버튼같은애들은 크기를 인식한다 */
+main .container .contents .loginbox form fieldset p {float: left;}
+main .container .contents .loginbox form fieldset p button {
+    width:75px; height: 67px;
+    background-color: #1e61a8;
+    color: white;
+}
+main .container .contents .loginbox form fieldset .left li,
+main .container .contents .loginbox form fieldset p button {
+}
+/* 여기가 로그인버튼 */
+main .container .contents .loginbox form fieldset p img {}
+/* 자물쇠모양 */
+main .container .contents .loginbox .join_search {
+    margin:20px 0 0 105px
+}
+main .container .contents .loginbox .join_search a {
+    background-color: #555;
+    color: white;
+    padding: 15px 10px;
+    font-size: 12px;
+    display: inline-block;
+}
+/* 회원가입하기, 비번찾기 */
+main .container .contents .top_link {
+    display: inline-block; width:50px; height: 50px; border-radius: 50%;
+    text-align: center; line-height: 50px;
+    background-color: #eee;
+    float: right;
+    margin-bottom: 20px;
+}
+main .container .contents .top_link::before {
+    content:'\f077'; display: inline; font-weight: 600;
+}
+/* 위로가는 아이콘 */
+main .container .contents .bottom_text {
+    clear: both;
+    background-color: #eee;
+    border: 1px solid #888;
+    padding: 25px 0 25px 100px;
+}
+main .container .contents .bottom_text p {
+    line-height:1.8;
+    font-size: 14px;
+}
+main .container .contents .bottom_text p em {
+    font-size: 14px;
+    color: #ff7f50;
+}
+/* 바텀 */

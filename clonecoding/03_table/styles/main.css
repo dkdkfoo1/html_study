@@ -1,0 +1,40 @@
+#t {
+    background-color: #fafafa;
+    width:1200px;
+    border-top: 2px solid #333;
+    border-collapse: collapse;
+    /* margin-top: 10px; */
+    margin: 50px 50px;
+}
+#t thead {}
+#t thead tr {}
+#t thead tr:nth-child(1) th:nth-child(1) {
+    background-image: url(../images/pay_table_02.png);
+    background-repeat:no-repeat;
+    background-size:30%;
+    background-position: center;
+    text-indent:-10000px
+}
+/* #t thead tr:first-chid th:first-child 선생님이 한 방식 */
+#t thead tr th {
+    border-top: 1px dashed #999;
+    padding: 20px 0;
+}
+#t thead tr th span {color: #999;}
+#t thead tr th {line-height: 160%;}
+#t tbody {background-color: white;}
+#t tbody tr {}
+#t tbody tr th {}
+#t tbody tr th em {font-weight: bold;}
+#t tbody tr th em span {
+    color: #ec018c;
+    font-weight: bold;
+}
+#t tbody tr td {}
+#t tbody tr th, #t tbody tr td {
+    border-bottom:  1px solid #e5e5e5;
+    border-top:  1px solid #e5e5e5;
+    padding: 10px 0;
+    text-align: center;
+}
+#t tbody tr th, #t tbody tr td {line-height: 300%;}
