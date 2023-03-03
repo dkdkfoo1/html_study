@@ -1,0 +1,69 @@
+.notice {
+    width:495px; background-color: aqua;
+    border:1px solid #ccc; border-radius: 10px;
+    padding: 25px 20px 40px 25px;
+    position: relative;
+}
+.notice h2 {
+    font-size: 1.2rem; letter-spacing: -0.02em; font-weight: bold;
+    margin-bottom: 30px;
+}
+.notice .more {
+    position: absolute; right:20px; top:25px;
+}
+.notice ul {
+    background-color: yellow;
+    margin-left: 100px;
+    /* 왼쪽에 이미지 주기 위해 왼쪽 여백 줌 */
+}
+.notice ul li {
+    position: relative;
+    padding: 7px 0;
+}
+.notice ul li::after {
+    clear:both; content: ''; display: inline-block;
+}
+/* 여기 왜 clear:both 주는걸까 overflow:hidden 삭제했는데... clear:both 빼도 적용 잘되는데.. */
+/* line-height 잘먹히지 않음. overflow때문에, 그래서 패딩값으로 넓혀줌 */
+.notice ul li::before {
+    content:''; display: inline-block;
+    width:4px; height: 4px;
+    background-color: black;
+    position:absolute; left:-5px; top:13px;
+}
+.notice ul li a {
+    float: left;
+    background-color: lime;
+    width:70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* %는 부모를 기준으로 함. */
+/* width:70%; =>먼저 가로 줘야함.
+white-space: nowrap; =>한줄처리
+overflow: hidden; => 정해진 크기안에서만 보이기
+text-overflow: ellipsis; => 외부처리를 말줄임... */
+/* 말줄임 처리 태그. */
+.notice ul li span {float:right;}
+footer {padding:30px;}
+footer a {margin-right: 10px;}
+footer a:nth-child(3) {
+    color: blue;
+}
+footer a::after {
+    width:1px; height: 15px; border-radius: 50%;
+    background-color: rebeccapurple;
+    content:''; display: inline-block;
+    position:relative; right:-7px; top:2px;
+}
+    /* content: '|'; display: inline;
+    color: rgb(116, 116, 116);
+    padding-left: 10px; 
+    이방법의 단점: 글자크기보다 작거나 크게 할 수 없다.
+    (디자인 다양성 부족)*/
+
+footer a:last-child::after {
+    display: none;
+}
+/* display: inline 안써도 적용이 되는데, 쓰는 이유 알아보긩! */
