@@ -1,0 +1,42 @@
+.box {
+    background-color: aqua;
+}
+/* 입력안하면 100px */
+.box .container {
+    background-color: pink;
+    width:800px;
+    /* 가로 값 여러가지 넣어보기 */
+    padding:50px;
+    /* overflow: hidden; */
+    margin:0 auto; 
+    /* block 가운데 정렬, 인라인에는 적용불가(인라인은 크기를 인식못하기 때문) */
+    /* auto는 좌우의 여백을 자동으로 처리해라. */
+}
+.box .container::after {clear:both; display:block; content:'';}
+/* 가상의 자식 설정법 */
+.box .container > * {width:100px; height:100px;}
+/* 꺽쇠는 자식 표시. *는 모든. 을 표현. 그러니까 박스컨테이너 안에있는 모든 자식들을 말함 */
+.box .container h1 {
+    background-color: lime;
+    float:left;
+    text-align: center;  
+    /* inline 가운데 정렬 */
+    /* padding-top:40px; */
+    /* padding-top으로 하면 그때그때 정렬을 해야해서 좀 불편할 수 있음. */
+    line-height:100px;
+    /* 행을 의미, 실제 높이로 써놓으면자동으로 중간 처리됨.
+    1줄일 경우만 가능, 수직가운데 정렬. 2줄이상일 때는 padding-top을 사용해야함. */
+}
+.box .container p {
+    background-color: coral;
+    float:right;
+    line-height: 100px;
+    text-align:right;
+}
+.box .container h1+p {
+    background-color: yellow;
+    float:left;
+    text-align: center;
+}
+/* 클래스 없이 개별인식 h1+p */
+/* h1+p가 p를 덮음 */
