@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-02</title>
+    <link href="./styles/reset.css" rel="stylesheet" type="text/css">
+    <style>
+        .container > *, .container1 > *, .container2 > *, .container3 > *{
+            width:100px; height: 100px;
+            border: 2px solid; #000;
+            font-size:2rem;
+            text-align:center; line-height:100px;  
+        }
+        .container, .container1, .container2, .container3 {
+            background-color: aqua; padding: 20px; 0;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap;*/
+            /* align-content:center; */
+            margin:20px 0; width:400px; height: 400px;
+        }
+        .container {
+            flex-flow: row wrap;
+            justify-content :center;
+            align-content: center;
+        }
+        /* 메인방향의 정렬 justify-content
+        두줄 교차방향 정렬 align-content
+         */
+        .container .item {
+        }
+        .container1 {
+            flex-flow: row nowrap;
+            align-items: flex-end;
+        }
+        /* 한줄 교차축 align-items */
+        .container1 .item {
+        }
+        .container2 {
+            flex-flow:row-reverse wrap;
+            align-content:center;
+            width:300px; height: 400px;
+        }
+        /* 메인축 수평 row, 뒤집어져있음 reverse, 줄바꿈 wrap
+        들어갈 너비가 좁을 때 줄바꿈이 되니까 크기도 줄여줌. */
+        .container2 .item {
+        }
+        .container3 {
+            flex-flow:row wrap;
+            width:300px; height: 400px;
+            justify-content: flex-end;
+            align-content: space-between;
+        }
+        /* 메인축을 오른쪽으로 보냄 justify-content: flex-end
+        교차축 두줄 align content */
+        .container3 .item {
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="container1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="container2">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+    <div class="container3">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+</body>
+</html>
