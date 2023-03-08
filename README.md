@@ -172,3 +172,6 @@ flex-flow 하는법<br>
 position:absolute와 position:fixed 는 사용하면 요소가 안보이는 일이 발생 할 수 있음 (요소가 뒤로 간다던가, 크기가 사라지는등)<br>
 그럴때는 z-index 를 사용해야한다는것 잊지말기<br>
 다시복습하기</p>
+<hr>
+<h2>23.03.08 sprite- CSS</h2>
+<p>스프라이트로 이미지 로고 올리기..</p>
