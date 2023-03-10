@@ -1,0 +1,26 @@
+body {}
+.main1 {background: url(../images/bg1.png);
+background-size: cover;}
+.main1 .main1_in {width: 1220px; margin: 0 auto; height: 800px;}
+.main1 .main1_in .logo {}
+.main1 .main1_in .logo img {width:50px;}
+.main1 .main1_in .center {}
+.main1 .main1_in .center h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+}
+.main1 .main1_in .center p {
+    font-size: 3.5rem;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+}
+.main1 .main1_in .center a {
+}
+.main1 .main1_in .center a img {}
+.main1 .main1_in .btn2 {
+}
+.main1 .main1_in .btn2 img {
+}
