@@ -520,3 +520,5 @@ footer .f_btt .f_b_right a img {}
 /* transition 은 css 수치값이 변화가 일어날때 애니메이션 적용
 ex)100->110값변화 o
 ex)row->column 값변화 x */
+#up {position: fixed; right:50px; bottom:50px; z-index:9999;}
+/* z-index에 꼭 단위 붙히면 안된다!! */
