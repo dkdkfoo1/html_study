@@ -392,6 +392,7 @@ main .news .news_title {
     padding: 20px 0;
     border-bottom: 1px solid #ccc;
     margin-top: 50px;
+    margin-bottom: 15px;
 }
 main .news .news_title h2 {
     font-size: 26px;
@@ -407,21 +408,26 @@ main .news .ne_btt {
     justify-content: space-between;
     align-content: flex-start;
 }
+/* 이미지후버 */
 main .news .ne_btt a {
-    width: 273px;
-    margin: 0px auto;
+width: 23.5%;
+overflow: hidden;
+}
+main .news .ne_btt a p {
+    position: relative;
+}
+main .news .ne_btt a p img {
+width: 100%;
+transition: all 0.5s;
+}
+main .news .ne_btt a:hover p img {
+transform: scale(1.1);
+}
+main .news .ne_btt a p:first-child {
+    height: 180px;
     overflow: hidden;
 }
-main .news .ne_btt a img {
-    padding: 18px 0;
-}
-main .news .ne_btt a img:hover {
-    transition: all 0.2s linear;
-    max-width: 100%;
-}
-main .news .ne_btt a:hover img {
-    transform: scale(1.4);
-} 
+/* 이미지후버 */
 main .news .ne_btt a p {
     width: 273px; 
     word-break: break-word;
@@ -476,6 +482,18 @@ footer .f_top .f_t_right a .ic3 {background-position-x:-50px;}
 footer .f_top .f_t_right a .ic4 {background-position-x:-75px;}
 footer .f_top .f_t_right a .ic5 {background-position-x:-100px;}
 footer .f_top .f_t_right a .ic6 {background-position-x:-125px;}
+/* sns 후버 색상용 */
+footer .f_top .f_t_right a .ic:hover {
+    width: 25px; height: 25px;
+    background: url(../images/icon_sns2/css_sprites\ \(5\).png) no-repeat;
+    background-position-y:0;
+}
+footer .f_top .f_t_right a .ic1:hover {background-position-x:0;}
+footer .f_top .f_t_right a .ic2:hover {background-position-x:-25px;}
+footer .f_top .f_t_right a .ic3:hover {background-position-x:-50px;}
+footer .f_top .f_t_right a .ic4:hover {background-position-x:-75px;}
+footer .f_top .f_t_right a .ic5:hover {background-position-x:-100px;}
+footer .f_top .f_t_right a .ic6:hover {background-position-x:-125px;}
 /* footer 아래 */
 footer .f_btt {
     display: flex;
@@ -498,3 +516,7 @@ footer .f_btt .f_b_right a {}
 footer .f_btt .f_b_right a img {}
 /* width 속성의 경우-> 왼쪽상단 기준점으로 인해
 우측하단으로만 이미지가 확대된다. */
+/* trasform속성은 기준점을 요소의 중심으로 인식한다. */
+/* transition 은 css 수치값이 변화가 일어날때 애니메이션 적용
+ex)100->110값변화 o
+ex)row->column 값변화 x */
