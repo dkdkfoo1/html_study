@@ -1,0 +1,35 @@
+/* flex는 정렬하고자 하는 형제대상의 부모에 주는 명령이다 */
+.box {
+    width: 90%; 
+    max-width: 1025px;
+    min-width:320px;
+    margin: 50px; auto:0;
+    background: aqua;
+    display: flex;
+    flex-flow: row wrap;
+}
+.box a {
+    height: 250px; width:25%;
+    margin-bottom: 30px;
+}
+.box a:nth-child(even) {
+    background: pink;
+}
+.box a:nth-child(odd) {
+    background: yellow;
+}
+/* 768px 이하일때 4개에서 2개 보이게 만듬. */
+/* @media screen and (max-width:768px){
+    .box a {width: 50%;}
+} */
+
+@media screen and (max-width:1024px){
+    .box a {width:33%}
+}
+/* 100나누기 3 */
+@media screen and (max-width:600px){
+    .box a {width:50%}
+}
+@media screen and (max-width:400px){
+    .box a {width:100%}
+}

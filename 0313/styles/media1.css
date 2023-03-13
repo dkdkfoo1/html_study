@@ -1,0 +1,29 @@
+#wrap {
+    width: 900px; height: 500px; margin: 50px; auto:0;
+    background: aqua; text-transform: uppercase;
+    text-align: center; line-height: 500px; font-size: 3rem;
+}
+/* @media screen and (min-width:500px) {
+    #wrap {background: yellow;height:}
+}
+@media screen and (min-width:700px) {
+    #wrap {background: plum; height: 400px;}
+} */
+@media screen and (max-width:899px) {
+    #wrap {background: rgb(255, 0, 0);}
+}
+@media screen and (max-width:768px) {
+    #wrap {background: rgb(255, 107, 15);}
+}
+@media screen and (max-width:550px) {
+    #wrap {background: yellow;}
+}
+@media screen and (max-width:450px) {
+    #wrap {background: rgb(10, 255, 108);}
+}
+@media screen and (max-width:300px) {
+    #wrap {background: rgb(39, 50, 255);}
+}
+@media screen and (max-width:150px) {
+    #wrap {background: rgb(150, 30, 255);}
+}
