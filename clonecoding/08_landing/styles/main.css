@@ -1,26 +1,380 @@
 body {}
-.main1 {background: url(../images/bg1.png);
-background-size: cover;}
-.main1 .main1_in {width: 1220px; margin: 0 auto; height: 800px;}
-.main1 .main1_in .logo {}
-.main1 .main1_in .logo img {width:50px;}
-.main1 .main1_in .center {}
-.main1 .main1_in .center h2 {
+.main1 {background: url(../images/bg1.png) center;
+background-size: cover;
+background-attachment: fixed;
+}
+.main1 .main1_in {
+    background: linear-gradient(-180eg, rgba(0,0,0,0.4)), transparent 70%;
+}
+.main1 .main1_in .container {
+    width: 1220px; margin: 0 auto;
+    position: relative;
+    text-align: center;
+    padding: 150px 0 400px;
+}
+/* new */
+.main1 .main1_in .container .logo {
+    position:absolute; left:0; top:0;
+width: 50px;
+}
+.main1 .main1_in .container .logo a {}
+.main1 .main1_in .container .logo a img {width: 100%;}
+.main1 .main1_in .container .title {
+    font-size: 3.5rem;
+    color: white;
+    margin: 20px;
+}
+.main1 .main1_in .container p {
+    margin-bottom: 20px;
+}
+.main1 .main1_in .container a {}
+.main1 .main1_in .container a:first-child {
+}
+.main1 .main1_in .container a img {}
+.main1 .main1_in .container .btn2 {
+    position: absolute;
+    right: 0; bottom: 250px;
+}
+.main1 .main1_in .container .btn2 img {}
+/* new */
+.main1 .main1_in h2 {
     font-size: 3.5rem;
     text-align: center;
     color: white;
 }
-.main1 .main1_in .center p {
+.main1 .main1_in  p {
     font-size: 3.5rem;
     text-align: center;
     color: white;
     font-weight: bold;
-
 }
-.main1 .main1_in .center a {
+.main1 .main1_in  a {
 }
 .main1 .main1_in .center a img {}
 .main1 .main1_in .btn2 {
 }
 .main1 .main1_in .btn2 img {
+}
+/* 퀴즈부분 */
+#quiz_bg {background: url(../images/quiz_bg.png);
+background-size: cover;}
+#quiz_bg .container {
+    width: 1220px; margin: 0 auto;
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#quiz_bg .container .left {width: 50%;}
+#quiz_bg .container .left #quizFrm {}
+#quiz_bg .container .left #quizFrm fieldset {}
+#quiz_bg .container .left #quizFrm fieldset .skip {}
+#quiz_bg .container .left #quizFrm fieldset h1 {
+    font-size:40px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: white;
+    text-align: center;
+}
+#quiz_bg .container .left #quizFrm fieldset h2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 20px 0;
+    color: white;
+}
+#quiz_bg .container .left #quizFrm fieldset ul {
+    padding-bottom: 50px;
+}
+#quiz_bg .container .left #quizFrm fieldset ul li {
+    padding: 10px 0;
+}
+#quiz_bg .container .left #quizFrm fieldset ul li label {
+    font-size: 20px;
+    color: white;
+}
+#quiz_bg .container .left #quizFrm fieldset ul li input[name=quiz] {
+}
+#quiz_bg .container .left #quizFrm fieldset ul li #q30 {}
+#quiz_bg .container .left #quizFrm fieldset ul li label {}
+#quiz_bg .container .left #quizFrm fieldset ul li #q40 {}
+#quiz_bg .container .left #quizFrm fieldset ul li #q50 {}
+#quiz_bg .container .left #quizFrm fieldset ul li #q60 {}
+#quiz_bg .container .left #quizFrm fieldset p {}
+#quiz_bg .container .left #quizFrm fieldset p .quiz_answer {
+    color: white;
+    border: 1px solid black;
+    border-radius: 28px;
+    background-color: black;
+    width:500px; height: 50px;
+}
+#quiz_bg .container .right {
+    width: 50%;
+    padding-top: 50px;
+}
+#quiz_bg .container .right p {
+    text-align: center;
+    color: white;
+}
+#quiz_bg .container .right p img {
+    padding-bottom: 50px;
+}
+/* 동영상부분 */
+/* ---------------campaign통합 */
+.campaign_bg {}
+.campaign_bg .container {
+    width:1220px; margin: 0 auto; padding: :100px 0;
+}
+.campaign_bg .container h1 {
+    font-size: 3rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.5;
+    text-align: center; 
+}
+.campaign_bg .container h1 * {font-size: 3rem; font-weight: 700; letter-spacing: -0.02em; line-height: 1.5;}
+/* -----------------------campaign1~7 배경모음 */
+.campaign1 {}
+.campaign2 {
+    background: url(../images/50_bg.png);}
+.campaign3 {background-color: #eee;}
+.campaign4 {
+    background: url(../images/50_bg.png);}
+.campaign5 {
+    background: url(../images/wwf.jpg);}
+.campaign6 {
+    background: url(../images/50_bg.png);}
+.campaign7 {
+    background: url(../images/bg2.png);}
+.campaign_bg {background-size: cover; background-position: center;}
+/* ---------------------------campaign1~7 제목 근접 단락 통일 */
+.campaign_bg .container h1+p {
+    font-size: 1.7rem; letter-spacing: -0.02em;
+    line-height: 1.6;
+}
+/* ----------------------------campaign1~7 제목 포인트 부분 */
+.campaign_bg .container h1 em {background-color: white;
+color: #000; padding:8px;}
+/* -----------------------campaign1 */
+.campain1 {
+    background: url(../images/video_bg.png);
+}
+.campaign1 .container {
+}
+.campaign_bg {}
+.campaign_bg .container 
+{width: 1220px; margin: 0 auto;}
+.campaign_bg .container > * {}
+.campaign_bg .container h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 900;
+    padding: 60px 0;
+    line-height: 1.5;}
+.campaign1 .container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.campaign1 .container iframe {
+    padding-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+}
+.campaign1 .container .sponsor {
+    padding-bottom: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.campaign1 .container .sponsor img {}
+/* -----------------------campaign2 */
+.campaign2 .container {}
+.campaign2 .container h1 {
+    text-align: left;
+    color: white;
+}
+.campaign2 .container h1+p {color: white;}
+.campaign2 .container p:last-child {}
+.campaign2 .container p:last-child img {
+    width: 100%;
+    margin: 50px 0 100px;
+}
+/* ----------------------campaign3 */
+.campaign3 {} 
+.campaign3 .container {
+} 
+.campaign3 .container h1 {} 
+.campaign3 .container h1+p {
+    text-align: center;
+    padding-bottom: 80px;
+} 
+.campaign3 .container .images3 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+} 
+.campaign3 .container .images3 .im_1 {
+    background: url(../images/28.png);
+    width: 372px; 
+    background-size: cover; background-position: center;
+    background-position-y: 380px;
+} 
+.campaign3 .container .images3 h2 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.campaign3 .container .images3 h2+p {
+    color: white;
+    text-align: center;
+    font-size:  30px;
+    padding-bottom: 230px;
+}
+.campaign3 .container .images3 .im_1 p {} 
+.campaign3 .container .images3 .im_2 {
+    background: url(../images/27.png); 
+    width: 372px; 
+    background-size: cover; background-position: center;
+    background-position-y: -60px;
+} 
+.campaign3 .container .images3 .im_2 p {} 
+.campaign3 .container .images3 .im_3 {
+    background: url(../images/28.png);
+    width: 372px; 
+    background-size: cover;
+    background-position-y: 380px;
+} 
+.campaign3 .container .images3 .im_3 p {} 
+.campaign3 .container .images3 .im_1 p:last-child {
+    background: #fff;
+    line-height: 30px;
+    font-size: 18px;
+    height: 218px;
+    text-align: center;
+    padding: 40px 20px 0 20px;
+}
+.campaign3 .container .images3 .im_2 p:last-child {
+    background: #fff;
+    line-height: 30px;
+    font-size: 18px;
+    height: 218px;
+    text-align: center;
+    padding: 40px 20px 0 20px;
+}
+.campaign3 .container .images3 .im_3 p:last-child {
+    background: #fff;
+    line-height: 30px;
+    font-size: 18px;
+    height: 218px;
+    text-align: center;
+    padding: 40px 20px 0 20px;
+}
+/* ---------------------------------4 */
+.campaign4 {}
+.campaign4 .container {
+    text-align: left;
+    color: #fff;
+}
+.campaign4 .container h1 {
+    text-align: left;
+}
+.campaign4 .container h1 em {}
+.campaign4 .container p {}
+.campaign4 .container img {
+    margin: 30px 0 100px;
+    width: 100%;
+}
+/* ---------------------------------5 */
+.campaign5 {background: url(../images/wwf.jpg);
+background-position: center;
+background-size: cover;}
+.campaign5 .container {
+    background-color:rgba(255, 255, 255, 0.5);
+    width: 100%;
+}
+.campaign5 .container h1 {
+    padding-top: 30px;
+}
+.campaign5 .container p {
+    text-align: center;
+    padding: 10px 0 30px;
+    font-weight: 300;
+}
+.campaign5 .container p:last-child {
+    font-size: 1.5rem;
+    padding-bottom: 100px;
+}
+/* ---------------------------------6 */
+.campaign6 {}
+.campaign6 .container {}
+.campaign6 .container .upper {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.campaign6 .container .upper h1 {
+    color: white;
+    text-align: left;
+}
+.campaign6 .container .upper a {
+    margin-top: 80px;
+}
+.campaign6 .container .upper h1 a img {
+
+}
+.campaign6 .container .bottom {
+    display: flex;
+    flex-flow: row; nowrap;
+    justify-content: space-between;
+}
+.campaign6 .container .bottom img {
+    width: 357px;
+    height: 200px;
+}
+.campaign6 .container .bottom .bottom1 {}
+.campaign6 .container .bottom .bottom1 img {}
+.campaign6 .container .bottom .bottom1 img p {}
+.campaign6 .container .bottom .bottom2 {}
+.campaign6 .container .bottom .bottom2 img {}
+.campaign6 .container .bottom .bottom2 img p {}
+.campaign6 .container .bottom .bottom3 {}
+.campaign6 .container .bottom .bottom3 img {}
+.campaign6 .container .bottom .bottom3 img p {}
+.campaign6 > p {
+    background-color: #fff;
+    display: inline-block;
+    margin-left: 1050px;
+    margin-bottom: 30px ;
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+.campaign6 .container .bottom0 p:last-child {
+    font-size: 1.2rem;
+    text-align: center;
+    color: white;
+    padding: 30px 0 20px;
+    line-height: 1.5em;
+}
+/* ---------------------------------7 */
+.campaign7 {}
+.campaign7 .container {
+    text-align: center;
+    padding-bottom: 100px;
+}
+.campaign7 .container h1 {}
+.campaign7 .container p {
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+.campaign7 .container a {}
+/* ------------------------------- */
+footer {
+    width: 1220px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+footer h1 {
+    padding: 50px 0 30px;
+    font-size: 1.5rem;
+    font-weight: bold;}
+footer p {
+    font-size: 1.2rem;
+    line-height: 2em;
 }
