@@ -1,0 +1,36 @@
+#login {
+    transform:translate(0,90%);
+    margin:0 auto;
+    background: #f5f6f7;
+    border:1px solid #eee;
+    width:400px;
+} 
+#login #login_top {
+    margin:10px 10px 0;
+} 
+#login #login_top p {
+    font-size:0.9rem;
+} 
+#login #login_top p button {
+    font-size:1.2rem;
+    color:#fff;
+    margin:10px;
+    padding:10px 150px;
+    background:#19ce60;
+} 
+#login #login_bottom {
+    padding:10px 10px 20px;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+}
+#login_bottom #login_left {
+} 
+#login #login_bottom #login_left a {
+    font-size:0.9rem;
+} 
+#login #login_bottom #login_right {}
+#login #login_bottom #login_right a {
+    font-size:0.9rem;
+}
+/* 초록 #08a600; 인증번호 #eee; 배경#f5f6f7; 연한회색 #c1c1c1; or #eee;* #19ce60;/
