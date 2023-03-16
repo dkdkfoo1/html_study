@@ -248,10 +248,74 @@
 }
 .main6 .main_bg6 .people .right_6 {}
 .main6 .main_bg6 .people .right_6 p {
-    margin-top: 300px;
+
+    font-size: 2rem;
+    color: #fff;
+    font-family: 'Black Han Sans', sans-serif;
+    text-align: center;
+    margin-top: 250px;
+}
+.main6 .main_bg6 .people .right_6 p span {
+    font-size: 3rem;
+    color: #fff;
+    font-family: 'Black Han Sans', sans-serif;
 }
 .main6 .main_bg6 .people .right_6 p img {
-    width: 400px;
+    width: 320px;
+    margin-top: 60px;
 }
-
-
+/* 7-------------------------------------------- */
+.main7 {
+    width: 1000px;}
+.main7 .bg {
+    padding: 40px 0;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+}
+.main7 .bg video {width: 100%;}
+.main7 .bg .text {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.main7 .bg .text p {
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+    font-family: 'Black Han Sans', sans-serif;
+    text-shadow: 4px 4px 0px rgb(255, 167, 80);
+}
+.main7 .bg .text p img {
+    display: inline-block;
+    position: absolute;
+    width: 100px;
+    top: 5px;
+    right: 5px;
+    transform: translate(0%,-260%);
+}
+/* 8-------------------------------------------- */
+/* footer-------------------------------------------- */
+footer {
+    width: 100%;
+    background-color: rgb(255, 167, 80);
+    padding-bottom: 50px;
+}
+footer .notice {
+    margin: 0 auto;
+    width: 1000px;
+}
+footer .notice h2 {
+    padding-top: 50px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 3rem;
+    text-align: left;
+    padding-bottom: 30px;
+}
+footer .notice p {
+    line-height: 2em;
+}
