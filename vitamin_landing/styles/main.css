@@ -87,3 +87,171 @@
     font-family: 'Black Han Sans', sans-serif;
 }
 /* 4-------------------------------------------- */
+.main4 {
+    background-color: rgb(255, 167, 80);
+    width: 100%;
+}
+.main4 h2 {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 4rem;
+}
+.main4 h2+p {
+    margin: 0 auto;
+    border: 1px solid rgb(255, 167, 80);
+    border-radius: 50%;
+    width: 100%;
+    width: 730px;height:730px;
+    background-image:url(../images/godsang.png);
+    background-position-x:5px;
+    background-position-y:-166px;
+}
+.main4 h2+p p:before {
+    content:''; display:block;
+    background-size:cover; 
+}
+.main4 p:last-child {
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 4rem;
+    color: #fff;
+}
+/* 5--------------------------------- */
+.main5 {
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+.main5 > h2 {
+    padding: 50px; 0;
+    text-align: center;
+    font-size: 2rem;
+    line-height:1.5em;
+}
+.main5 > h2 span {
+    font-size: 2rem;
+    font-family: 'Black Han Sans', sans-serif;
+}
+.main5 .bottom {}
+.main5 .bottom .event {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.main5 .bottom .event p {
+    width: 33%;
+}
+.main5 .bottom .event p img {
+    width: 100%;
+}
+.main5 .bottom .event p span {
+    width: 350px;
+    display: inline-block;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 1.6rem;
+    font-family: 'Black Han Sans', sans-serif;
+}
+.main5 .bottom .event p span strong {
+    font-size:1.2rem;
+    display:block
+}
+/* 5-2---------------------------------- */
+.main5 .bottom2 {
+    margin: 0 auto;
+    border: 1px solid #fff;
+    background-color: rgb(232, 232, 232);
+    width: 800px; height: 500px;
+    margin-bottom: 20px;
+    padding: 0px 30px;
+}
+.main5 .bottom2 h2 {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size:2rem;
+    text-align: center;
+    padding-top: 50px;
+}
+.main5 .bottom2 h3 {
+    text-align: center;
+    font-size:1rem;
+    padding-bottom: 60px;
+}
+.main5 .bottom2 .event2 {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+.main5 .bottom2 .event2 p {
+    text-align: center;
+    width: 33%;
+
+}
+.main5 .bottom2 .event2 p span {
+    display: inline-block;
+    padding: 20px 0;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+}
+.main5 .bottom2 .event2 p img {
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 50%;
+    width: 80%;
+}
+.main5 > p {
+    border: 1px solid rgb(255, 167, 80);
+    background-color: rgb(255, 167, 80);
+    text-align: center;
+    border-radius: 70px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 1.6rem;
+    padding: 20px 20px;
+    width: 300px;
+    margin: 0 auto;
+    color: #fff;
+}
+/* 6-------------------------------------------- */
+.main6 {
+    background-color: rgb(255, 167, 80);
+    width: 100%;
+}
+.main6 .main_bg6 {
+    margin: 0 auto;
+    width: 1000px;
+}
+.main6 .main_bg6 .people {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.main6 .main_bg6 .people .left_6 h2 {
+    font-size: 1.6rem;
+    line-height: 1.3em;
+    color: #fff;
+    padding: 40px 0 20px;
+    text-align: center;
+}
+.main6 .main_bg6 .people .left_6 h2 span {
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 2rem;
+}
+.main6 .main_bg6 .people .left_6 p {
+    border: 1px solid rgb(255, 167, 80);
+    border-radius: 40px;
+    overflow: hidden;
+}
+.main6 .main_bg6 .people .left_6 p img {
+    display: inline-block;
+    text-align: center;
+    width: 600px;
+}
+.main6 .main_bg6 .people .right_6 {}
+.main6 .main_bg6 .people .right_6 p {
+    margin-top: 300px;
+}
+.main6 .main_bg6 .people .right_6 p img {
+    width: 400px;
+}
+
+
