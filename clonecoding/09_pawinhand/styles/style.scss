@@ -1,0 +1,129 @@
+// 변수
+//----------------색상
+$bg1-light:#eee; //header,card,q&a 배경 
+$bg3-dark:#222; //bnr,btn,footer 배경
+$font-color-bk:#000; //
+$font-color-wh:#fff; //
+$page-disable:#ccc; //페이지번호 비활성화
+$page-active:#fff; //페이지번호 활성화
+//--------------여백
+$padding50:50px 0; //변수는 속성은 안넣고 값만 넣는 것. 
+//재사용규칙(Mixins) 선언
+//@mixin 생성규칙명
+//@include 호출규칙명
+@mixin layout { //컨텐츠 크기+가운데정렬
+    margin:0 auto;
+    width: 1200px;
+}
+@mixin flex-row-between {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-column-between {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+// 실행
+#header_bg {
+    background-color: $bg1-light;
+    header {
+        @include layout;
+        @include flex-row-between;
+        height: 70px;
+        h1{a{img{}}}
+        nav {
+            a{margin-left: 16px;}
+            a:first-child {margin: 0;} //before 안줘야 되네.. 왜지? 헉!!! 
+            //아 ! 첫번째 자식한테는 마진이 애초에 안들어가는구나!!!오호호 깨달았다.!유레카!
+        }
+    }//e:header ->end 약자.
+}//header_bg end
+#slide_wrap {
+    @include layout;
+    position: relative;
+    .slide_container {
+        .slide {display: none;}
+        .slide1 {display: block;}
+        .slide2 {}
+        .slide3 {}
+        .slide4 {}
+    }//e:slide_container
+    .prev, .next {position: absolute;}
+    .prev {top:45%; left:20px;}
+    .next {top:45%; right:20px;}
+    .pagenation {
+        position: absolute; bottom: 50px; left: 0;
+        width: 100%; text-align: center;
+        a {
+            background: $page-disable;
+            width: 16px; height: 16px;
+            display: inline-block;
+            border-radius: 50%;
+            text-indent:-9999px;
+            margin-right: 10px;
+        }
+        a.active {background: $page-active;}
+        a:last-child {margin: 0;}
+    }
+}//e:slide_wrap
+#gallery_wrap {
+    @include flex-row-between;
+    @include layout;
+    padding:$padding50;
+    .gallery {
+        width: 100px; height: 100px;
+        img {width: 100%;}
+    }
+    .g5 {width:200px; height: 200px;}
+}//e:gallery_wrap
+#bnr_wrap {
+    background: $bg3-dark;
+    text-align: center;
+    padding: $padding50;
+    span {
+        color: $font-color-wh;
+    }
+}//e:bnr_wrap
+#card_wrap {
+    @include layout;
+    @include flex-row-between;
+    padding: $padding50;
+    .card {
+        background: $bg1-light;
+        padding: 30px 20px; width:23.5%; //(100-6)/4
+        * {padding-bottom: 20px; line-height: 1.3;}
+        .photo {
+            img {width: 100%;}
+        }
+        h2 {}
+        p:last-child {padding: 0;}
+    }
+}//e:card_wrap
+#qa_wrap {
+    @include layout; padding: $padding50;
+    h2 {font-size: 1.375rem; margin-bottom: 20px}
+    #qaFrm {
+        fieldset {
+            @include flex-column-between;
+            * {
+                margin-bottom: 16px;
+                background: $bg1-light;
+                padding:10px;
+                border: none;
+            }
+            input[name$=id] {}
+            input[name$=number] {}
+            #user_qa {height: 200px;}
+            #qa_btn {background: $bg3-dark; color: $font-color-wh; margin: 0;}
+        }
+    }
+}//e:qa_wrap
+footer {
+    background: $bg3-dark;
+    padding: $padding50;
+    text-align: center;
+    color: $font-color-wh;
+}
