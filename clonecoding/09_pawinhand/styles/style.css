@@ -3,7 +3,10 @@
 }
 #header_bg header {
   margin: 0 auto;
-  width: 1200px;
+  overflow-x: hidden;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  min-width: 320px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -19,7 +22,10 @@
 
 #slide_wrap {
   margin: 0 auto;
-  width: 1200px;
+  overflow-x: hidden;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  min-width: 320px;
   position: relative;
 }
 #slide_wrap .slide_container .slide {
@@ -68,7 +74,10 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  width: 1200px;
+  overflow-x: hidden;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  min-width: 320px;
   padding: 50px 0;
 }
 #gallery_wrap .gallery {
@@ -94,7 +103,10 @@
 
 #card_wrap {
   margin: 0 auto;
-  width: 1200px;
+  overflow-x: hidden;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  min-width: 320px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -119,7 +131,10 @@
 
 #qa_wrap {
   margin: 0 auto;
-  width: 1200px;
+  overflow-x: hidden;
+  width: calc(100% - 30px);
+  max-width: 1200px;
+  min-width: 320px;
   padding: 50px 0;
 }
 #qa_wrap h2 {

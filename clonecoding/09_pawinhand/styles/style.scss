@@ -12,8 +12,11 @@ $padding50:50px 0; //변수는 속성은 안넣고 값만 넣는 것.
 //@mixin 생성규칙명
 //@include 호출규칙명
 @mixin layout { //컨텐츠 크기+가운데정렬
-    margin:0 auto;
-    width: 1200px;
+    margin:0 auto; overflow-x: hidden; //아래 가로 스크롤 안생김~
+    //width:1200px;
+    width:calc(100% - 30px);//빼기 옆에 공백필수, 마진30px 여백설정계산
+    max-width: 1200px;
+    min-width: 320px;
 }
 @mixin flex-row-between {
     display: flex;
@@ -127,3 +130,10 @@ footer {
     text-align: center;
     color: $font-color-wh;
 }
+
+//media quree 
+// @media screen and (max-width:1024px) {
+//     #header_bg {
+//         header {background: coral;}
+//     }
+// }
