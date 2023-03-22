@@ -1,0 +1,36 @@
+$font_jua:'Jua', sans-serif;
+@mixin flex-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    position: fixed; left: 0; top:0; z-index: 999; //헤더고정
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), tranparent); 
+    height: 100px; width: 100%; padding: 0 15px; //position주면 calc가 안먹어져서 그냥 width랑 padding줬음.
+    @include flex-row;
+    h1 { width: 150px;
+        a {img{width: 100%;}}
+    }
+    .right {
+        @include flex-row;
+        .app {
+            margin-right: 15px;
+            font-family: $font_jua;
+            border:2px solid #fff; border-radius: 20px;
+            padding: 15px 25px; color: #fff;
+        }
+        .all_nav {
+            span {
+                display:block; //block으로 넣어서 줄바꿈 되니까 굳이 flex 안넣어도됨 
+                width: 30px; height: 5px;
+                background: #fff;
+                border-radius: 15px;
+            }
+            span:nth-child(1){}
+            span:nth-child(2){margin:3px 0;}
+            span:nth-child(3){}
+        }
+    }
+}
