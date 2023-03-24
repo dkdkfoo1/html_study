@@ -3,7 +3,7 @@ header {
   left: 0;
   top: 0;
   z-index: 999;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), tranparent);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), transparent);
   height: 100px;
   width: 100%;
   padding: 0 15px;
@@ -41,4 +41,129 @@ header .right .all_nav span {
 }
 header .right .all_nav span:nth-child(2) {
   margin: 3px 0;
+}
+
+main .visual {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+main .visual .contents {
+  position: relative;
+  z-index: 110;
+  padding-top: 300px;
+  text-align: center;
+}
+main .visual .contents > * {
+  color: #fff;
+}
+main .visual .contents h2 {
+  font-family: "Jua", sans-serif;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+main .visual .contents p {
+  line-height: 1.5;
+}
+main .visual .contents a {
+  border: 1px solid #fff;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 10px 80px;
+  display: inline-block;
+  border-radius: 25px;
+}
+main .visual .contents a p {
+  font-family: "Jua", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+}
+main .visual video {
+  width: 130%;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: 100;
+  transform: translateX(-50%);
+}
+main .visual .page_down {
+  position: absolute;
+  z-index: 110;
+  width: 100%;
+  left: 0;
+  bottom: 100px;
+  text-align: center;
+}
+main .visual::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 105;
+}
+main .event_wrap {
+  padding: 200px 0;
+  margin: 0 auto;
+  width: 1200px;
+}
+main .event_wrap h1 {
+  font-family: "Jua", sans-serif;
+  font-size: 3rem;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+main .event_wrap .more {
+  padding-top: 30px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  font-family: "Jua", sans-serif;
+}
+main .event_wrap .slide_wrap {
+  margin-top: 90px;
+}
+main .event_wrap .slide_wrap .slide_container {
+  display: grid;
+  grid-template-areas: "s1 s2 s3";
+  grid-template-rows: 320px;
+}
+main .event_wrap .slide_wrap .slide_container .slide {
+  position: relative;
+  margin-right: 10px;
+  border-radius: 30px;
+  padding: 20px;
+}
+main .event_wrap .slide_wrap .slide_container .slide h2 {
+  font-family: "Jua", sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+main .event_wrap .slide_wrap .slide_container .slide p {
+  padding-bottom: 80px;
+}
+main .event_wrap .slide_wrap .slide_container .slide .more {
+  position: absolute;
+  bottom: 10%;
+}
+main .event_wrap .slide_wrap .slide_container .slide1 {
+  background: url(../images/event_image_1.png) #ffe552 center no-repeat;
+  background-size: 80%;
+  background-position: 100px;
+  background-position-y: 100px;
+}
+main .event_wrap .slide_wrap .slide_container .slide2 {
+  background: url(../images/event_image_2.png) #b2e9de center no-repeat;
+  background-size: 70%;
+  background-position-x: 100px;
+  background-position-y: 123px;
+}
+main .event_wrap .slide_wrap .slide_container .slide3 {
+  background: url(../images/event_image_3.png) #ffcfd8 center no-repeat;
+  background-size: 70%;
+  background-position-x: 120px;
+  margin-right: 0;
 }/*# sourceMappingURL=main.css.map */

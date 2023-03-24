@@ -7,7 +7,7 @@ $font_jua:'Jua', sans-serif;
 }
 header {
     position: fixed; left: 0; top:0; z-index: 999; //헤더고정
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), tranparent); 
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.5), transparent); 
     height: 100px; width: 100%; padding: 0 15px; //position주면 calc가 안먹어져서 그냥 width랑 padding줬음.
     @include flex-row;
     h1 { width: 150px;
@@ -28,9 +28,93 @@ header {
                 background: #fff;
                 border-radius: 15px;
             }
-            span:nth-child(1){}
             span:nth-child(2){margin:3px 0;}
-            span:nth-child(3){}
         }
     }
-}
+}//e:header
+main {
+    .visual {
+        position: relative; height:100vh; overflow: hidden;
+        .contents {
+            position: relative; z-index: 110;
+            padding-top: 300px;
+            text-align: center;
+            > * { color: #fff;}
+            h2 {font-family: $font_jua; font-size: 3rem; line-height: 1.5;}
+            p {line-height: 1.5;}
+            a {border: 1px solid #fff;
+                margin-top: 50px;
+                background-color: #fff;
+                padding: 10px 80px;
+                display: inline-block;
+                border-radius: 25px;
+                p{font-family: $font_jua; color: rgb(0, 0, 0); font-size: 1.5rem;}
+            }
+        }
+        video {
+            width:130%; position:absolute; left:50%; top:0; z-index: 100;
+            transform: translateX(-50%);
+        }
+        .page_down {
+            position: absolute; z-index: 110;
+            width: 100%; left: 0; bottom:100px; text-align: center;
+        }
+    }
+    .visual::after {
+        content: ''; display: block; width: 100%; height: 100%;
+        background: linear-gradient(0deg, rgba(0,0,0,0.5), transparent);
+        position: absolute; left: 0; top: 0; z-index: 105;
+    }
+    .event_wrap {
+        padding: 200px 0;
+        margin: 0 auto;
+        width: 1200px;
+        h1 {font-family: $font_jua; font-size: 3rem; padding-bottom: 20px;
+        line-height: 1.5;}
+        p {}
+        .more {
+            padding-top: 30px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            font-family: $font_jua;
+            img {}
+        }
+        .slide_wrap {
+            margin-top: 90px;
+            .slide_container {
+                display: grid;
+                grid-template-areas:'s1 s2 s3';
+                // grid-template-columns:repeat(3, 1fr)
+                grid-template-rows: 320px;
+                .slide {
+                    position: relative;
+                    margin-right: 10px;
+                    border-radius: 30px;
+                    padding: 20px;
+                    h2 {font-family: $font_jua; font-size: 1.8rem; line-height: 1.5;}
+                    p {padding-bottom: 80px;}
+                    .more {position: absolute; bottom:10%;}
+                }
+                .slide1 {
+                    background:url(../images/event_image_1.png) #ffe552 center no-repeat;
+                    background-size:80%;
+                    background-position: 100px;
+                    background-position-y: 100px;
+                }
+                .slide2 {
+                    background: url(../images/event_image_2.png) #b2e9de center no-repeat;
+                    background-size:70%;
+                    background-position-x: 100px;
+                    background-position-y: 123px;
+                }
+                .slide3 {
+                    background: url(../images/event_image_3.png) #ffcfd8 center no-repeat;
+                    background-size:70%;
+                    background-position-x: 120px;
+                    margin-right: 0;
+                }
+            }
+        }
+    }//e:event_wrap
+}//e:main
