@@ -4,94 +4,15 @@
 /* 1----------------------------- */
 #purchase {position: fixed; right:50px; bottom:50px; z-index:9999;}
 /* 구매버튼 fiex */
-.main1 {}
-.main1 h1 {
-    text-align: center;
-    padding: 10px 0;
-}
-.main1 h1 img {
-    width: 100px;
-}
-/* 2------------------------------ */
-.main2 {
-    background-color: rgb(255, 167, 80);
-    width: 100%;
-    padding: 80px 0;
-}
-.main2 h2 {
-    font-size: 6rem;
-    text-align: center;
-    padding: 50px 0;
-    font-family: 'Black Han Sans', sans-serif;
-}
-.main2 p {
-    font-size: 3rem;
-    text-align: center;
-    font-family: 'Black Han Sans', sans-serif;
-}
-.main2 p span {
-    font-size: 4rem;
-    color: #fff;
-    font-weight: 900;
-}
-/* 3-------------------------------- */
-.main3 {
-    text-align: left;
-}
-.main3 .left {
-    display: flex;
-    flex-flow: row nowrap;
-}
-.main3 .left h1 {
-    margin-top: 200px;
-    font-size: 6rem;
-    font-family: 'Black Han Sans', sans-serif;
-}
-.main3 .left h1 span {
-    font-size: 6rem;
-    font-family: 'Black Han Sans', sans-serif;
-    color: rgb(255, 167, 80);
-}
-.main3 .left p {}
-.main3 .left p img {
-    width: 500px;
-}
-.main3 {
-    margin-bottom: 30px;
-}
-.main3 .right {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.main3 .right p {
-    text-align: center;
-    font-size: 1.6rem;
-    font-weight: 600;
-    padding: 5px 5px;
-}
-.main3 .right p:nth-child(1) {
-    border:1px solid rgb(255, 167, 80);
-    background-color: rgb(255, 167, 80);
-    border-radius: 70px;
-    line-height: 1.5em;
-    width: 550px;
-    margin-bottom: 20px;
-    color: #fff;
-}
-.main3 .right p:nth-child(2) {
-    font-size: 2.0rem;
-    line-height: 2.0em;
-}
-.main3 .right p:nth-child(2) span {
-    font-size: 5.0rem;
-    font-family: 'Black Han Sans', sans-serif;
+.main1 {
+    background: url(../images/bg1_new.jpg) no-repeat;
+    background-size: contain;
+    width: 1920px; height: 800px;
 }
 /* 4-------------------------------------------- */
 .main4 {
-    background-color: rgb(255, 167, 80);
-    width: 100%;
+    background:url(../images/bg2.jpg);
+    width: 1920px; height: 800px;
 }
 .main4 h2 {
     text-align: center;
