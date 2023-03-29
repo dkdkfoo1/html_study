@@ -1,22 +1,39 @@
+/* scrollbar css(chrome) */
+::-webkit-scrollbar {width: 10px; height: 10px;}
+::-webkit-scrollbar-track {background: rgb(190, 255, 136);}
+::-webkit-scrollbar-thumb {
+    background:linear-gradient(rgb(55, 35, 255), #00ffff, #ff00ff);
+    border-radius: 5px;
+}
+/* 가상선택자이기 때문에 콜론두개 붙힌다. */
+/* design */
+
 body {
+    overflow-x: hidden;
+    /* 스크롤 가로 넘치는거 안보이게 하는법 바디에 넣어야함 */
     background: url(../images/7598163.jpg) center;
     background-size: cover;
     background-attachment: fixed;
-    background-position-y:-150px;
 }
 /* 배경은 바디에 넣어야 편함 */
 main {
     display: flex; flex-flow: column nowrap;
     align-items: center;
+    height: 100vh;
+    /* 헐..이거 안했네.. 이거해야해~ */
 }
 /* 여기 메인에 밑에 모든것들을 가운데로 두기 위해서
 flow값을 줌 */
 /* justify-content:center 로 쓰려면 height 100vh 를 줘야함 왜냐면 길이가 있어야해서 */
 main .photo {
+    margin-top: 230px;
     width: 200px; height: 200px;
     border-radius: 50%;
     overflow: hidden;
     border: 10px solid #fff;
+    margin-bottom: 10px;
+    animation: updown 2s linear alternate infinite;
+    /* 위아래로 둥둥 움직이는거 키프레임 */
 }
 /* 여기다가 원 값 주고 오버플로우 넘치는거 숨긴당 */
 main .photo img {
@@ -27,39 +44,169 @@ main .photo img {
 main h1 {
     text-align: center;
     padding: 10px 0;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    text-transform: capitalize;
+    /* 첫번째 스펠링 대문자 */
+    background: linear-gradient(to right, #ff00ff, #00ffff, #ff00ff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-size: 400%;
+    /* 사이즈 넣어야함!!!!!!!!!!!!! 그래야 애니메이션 가능하네? */
+    animation: textg 10s linear infinite;
 }
 main .loading {
-}
-main .loading .bar {
     display: inline-block;
-    content: ''; width: 200px; height: 10px;
+    content: ''; width: 300px; height: 10px;
     font-weight: 600;
     background: #fff;
-    border-radius: 25px;
+    border-radius: 10px;
+    overflow: hidden;
     /* text-align: center; */
     /* position: absolute; top:40%; left: 50%; */
+    /* 여기다가 overflow:hidden을 넣어야 안에 있는 bar가 넘치는 부분을 숨길 수 있다.
+    나는 첨에 bar 에 넣었다가 왜 안되나 이러고 있었음. 부모에 넣어야 하나봄 */
 }
-main p {text-align: center;}
+main .loading .bar {
+    background: #ff00ff; display: block;
+    width: 100%; height: 10px;
+    transform: scaleX(0);
+    transition: all 2s ease;
+    transform-origin:left top;
+    /* scale의 중심축이 가운데이기 때문에 transform-origin으로 
+    중심축을 왼쪽 상단으로 바꿔준것.  */
+}
+/* photo 마우스 오버 시 bar 변화 주기 */
+main .photo:hover ~.loading .bar {
+    transform: scaleX(1);
+}
+/* ~은 형제 모두를 뜻함. 뒤에 선택할 형제의 이름과 자식쓰면됨 */
+main p {
+    text-align: center;
+    margin: 20px 0;
+}
 main .sns {
     display: flex;
 }
 main .sns a {
-    display: inline-block;
     width: 25px;
+    margin-right: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* 이미지와 글자를 가지고 있는 a에 column을 주고 center 값 주면 세로로 정렬됨 */
 }
+main .sns a:last-child {margin: 0;}
+/* 마지막 마진 빼주기 */
 main .sns a img {
     display: block;
     width: 100%;
     text-align: center;
-    background-color: aqua;
 }
+/* 이미지에 항상 100프로 */
 main .sns a .tip {
-    text-align: center;
-    display: none;
+    transform: translateY(10px);
+    /* 이미지와 떨어뜨리려고 쓴거 */
+    background: #222; color: #fff; padding: 5px;
+    font-family: 'Lobster', cursive;
+    opacity: 0;
 }
-main .gnb {}
-main .gnb span {}
-main .gnb span:nth-child(1) {}
-main .gnb span:nth-child(2) {}
-main .gnb span:nth-child(3) {}
+main .sns a:hover .tip {
+    opacity: 1;
+} 
+/* 여기 디스플레이로 없앴다가 생기게 하면 덜컹거릴 수 있음
+그래서 opacity로 하는게 낫다. */
+main .gnb {
+    width: 30px; height: 25px;
+    position: relative;
+    display: block;
+}
+main .gnb:hover span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+main .gnb:hover span:nth-child(2) {opacity: 0;}
+main .gnb:hover span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
+main .gnb span {
+    display: block;
+    content: ''; width: 100%; height: 5px;
+    font-weight: 600;
+    background: #222;
+    border-radius: 25px;
+    position: absolute; 
+    transition: all 0.3s;
+}
+main .gnb span:nth-child(1) {
+    top: 0;
+}
+main .gnb span:nth-child(2) {top:10px}
+main .gnb span:nth-child(3) {
+    bottom: 0;
+}
+/* ----------------------------------------------------------main끝 */
+.bg {}
+.bg > div {
+    background:url(../images/bg_new.png) repeat-x;
+    width: 150%; height: 83px;
+}
+.bg .text1 {
+    background: url(../images/bg_new.png) repeat-x;
+    width: 150%; height: 90px;
+    transform: rotate(-10deg) translateX(-100px);
+    /* 새로만든 이미지 백그라운드로 연결하고 무한반복시킨다 */
+    /* 백그라운드 이미지는 스스로 높이를 못가지기 때문에 써줘야함
+    안그러면 안보임 */
+    /* 백그라운드에 색상 임의로 잠시 넣어서 내가 넣은 height가 적당한지 확인한다. */
+    /* width는 100% */
+    /* width를 150프로로 늘린다음에 transform에 translateX를 추가해서 왼쪽값을 늘린다. */
+    animation:text_bg 100s linear alternate infinite;
+}
+.bg .text2 {
+    filter: invert(1); background-color: rgb(255, 0, 0,0.5);
+    /* 같은 이미지를 반전값넣어주고 백그라운드 흰색으로 해놓으면 백그라운드가 검정으로 나오고 안에 색도 반전됨 */
+    transform: rotate(10deg) translateX(-100px) scale(1.2);
+    /* 스케일 넣어서 두개 크기 다르게 할 수 있당! */
+    animation:text_bg 100s linear alternate-reverse infinite;
+}
+/* ----------------------------------------------------배경 띠 끝 */
+.project {margin: 150px 0;}
+.project .project_container {
+    max-width: 1300px; margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* a의 이미지를 그리드로 정렬하기. 부모에 적용해야함.  */
+}
+.project .project_container a {
+    background: url(../images/bg.jpg);
+    background-size: auto 100%; height: 350px;
+    /* 대신 a 에도 auto 100% 넣어줘야지 자연스러움 */
+    margin-right: 10px;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    position: relative;
+}
+.project .project_container a:hover {
+    box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.2);
+    background-size:auto 105%;
+    /* auoto 105% 이미지 커지는법 */
+}
+.project .project_container a::after {margin: 0;}
+.project .project_container a .intro {
+    text-align: center;
+    position: absolute; bottom: 0; width:100%; padding: 20px;
+    background-color: #fff;
+}
+.project .project_container a .intro h1 {
+}
+.project .project_container a .intro h2 {}
+.project .project_container a .intro p {}
+/* -------------------------------------------- */
+footer {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #fff;
+    text-shadow: 2px 8px 6px rgba(157, 0, 255, 0.2), 0px -3px 20px rgba(255,255,255,0.4);
+    margin: 120px 0;
+}
