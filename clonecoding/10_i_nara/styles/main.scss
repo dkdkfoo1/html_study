@@ -117,4 +117,66 @@ main {
             }
         }
     }//e:event_wrap
-}//e:main
+    .last { margin: 300px auto; width: 1200px;
+        .last_up {
+            h1 {
+                font-family: $font_jua; font-size: 3rem;}
+            p {margin: 20px 0;}
+            .more {
+                font-family: $font_jua;
+                .img {}
+            }
+        }
+        .last_down {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns:repeat(5, 1fr);
+        }
+        .image1 {
+            background: url(../images/thumbnail_image_1_20221104060651_67302.jpeg) no-repeat;
+            p {background-color: #ffcfd8;}
+            .btt {
+                .img {}
+            }
+        }
+            .image2 {background: url(../images/thumbnail_image_2_20221104060915_64092.jpeg) center no-repeat;
+                p {background-color: #b2e9de;}
+                .btt {
+                    .img {}
+                }
+            }
+            .image3 {background: url(../images/thumbnail_image_3_20221104060928_38608.jpeg) center no-repeat;
+                p {background-color: #fdff85;}
+                .btt {
+                    .img {width: 100%;}
+                }
+            }
+            .image4 {background: url(../images/thumbnail_image_4_20221104060946_71750.jpeg) center no-repeat;
+                p {background-color: #b2e9de;}
+                .btt {
+                    .img {width: 100%;}
+                }
+            }
+            .image5 {background: url(../images/thumbnail_image_5_20221104060955_15559.jpeg) center no-repeat;
+                p {background-color: #fff0c7;}
+                .btt {
+                    .img {width: 100%;}
+                }
+            }
+            .down_img {
+                background-size: cover;
+                height: 300px;
+                border-radius: 40px;
+                position: relative;
+                margin-right: 10px;
+                >p {
+                    position:absolute; top:20%; left: 10%;
+                    padding: 10px 30px;
+                    border-radius: 50px;
+                    font-weight: bold;
+                }
+                >a {position:absolute; bottom:30%; left: 30%;}
+            }
+        }
+    }//e:main
+    
