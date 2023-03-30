@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-4</title>
+    <link rel="stylesheet" href="./styles/resset.css">
+    <style>
+        body, html {background-color: #f68a16; text-align: center;}
+        .perspective {
+            display: inline-flex;
+            transform-style: preserve-3d;
+            perspective: 700px; margin-top: 200px;
+        }
+        .perspective .box {
+            width: 300px; height: 300px; overflow: hidden; margin: 50px;
+            border: 5px solid #fff;
+            position: relative;
+        }
+        .perspective .box img {
+            width: 160%;
+            position: absolute; top: -230px; left: -70px;
+        }
+        .perspective .box:nth-child(1) {
+            animation: box 0.5s ease forwards, 
+                box2 1s ease alternate forwards 1s 2;
+        }
+        .perspective .box:nth-child(2) {
+            animation: box 0.5s ease forwards, 
+                box3 1s ease alternate forwards 1s 2;
+        }
+        @keyframes box {
+            0% {
+                transform: translateY(-500px) scale(0.5);
+            }
+            100% {
+                transform:translateY(0px) scale(1);
+                /* 박스쉐도우 x y blur 그림자크기 */
+            }
+        }
+        @keyframes box2 {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform:translateX(-1000px);
+                /* 박스쉐도우 x y blur 그림자크기 */
+            }
+        }
+        @keyframes box3 {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform:translateX(1000px);
+                /* 박스쉐도우 x y blur 그림자크기 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="perspective">
+        <div class="box"><img src="./images/burger1.jpg" alt=""></div>
+        <div class="box"><img src="./images/burger1.jpg" alt=""></div>
+    </div>
+</body>
+</html>
+<!-- #f68a16 -->

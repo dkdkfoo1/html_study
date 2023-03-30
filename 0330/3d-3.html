@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d-3</title>
+    <link rel="stylesheet" href="./styles/resset.css">
+    <style>
+        body, html {
+            background: #eee;
+            text-align: center;
+            /* 텍스트 얼라인은 적용하는 대상의 자식에게 적용되는 것
+            그래서 밑에 자식에 inline-flex 로 인라인효과주고 정렬함 */
+        }
+        .perspective {
+            display: inline-flex;
+            transform-style: preserve-3d;
+            perspective: 700px; margin-top: 200px;
+        }
+        .perspective .box {
+            width: 200px; height: 200px; margin: 50px;
+            background: hotpink;
+            border: 5px solid #fff;
+            box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+            transform:rotateX(40deg) rotateZ(45deg);
+        }
+        /* .perspective .box:hover {
+            animation: box 0.3s ease both;
+        } */
+        .perspective .box:nth-child(1) {
+            animation: box 0.5s ease forwards, 
+                box 0.5s alternate-reverse ease forwards 1s;
+        }
+        .perspective .box:nth-child(2) {
+            animation: box 0.5s ease forwards 0.5s, 
+                box 0.5s alternate-reverse ease forwards 1.5s;
+        }
+        @keyframes box {
+            0% {
+                transform: rotateX(40deg) rotateZ(45deg) scale(1);
+                border-radius: 0;
+                box-shadow: 0 5px 5px rgba(0,0,0,0.5);
+            }
+            100% {
+                transform: rotateX(0deg) rotateZ(0deg) scale(1.2);
+                border-radius: 20px;
+                box-shadow: 0 100px 30px -30px rgba(0,0,0,0.2);
+                /* 박스쉐도우 x y blur 그림자크기 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="perspective">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
