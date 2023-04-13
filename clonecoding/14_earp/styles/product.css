@@ -1,0 +1,128 @@
+main {
+  width: 1200px;
+  margin: 0 auto;
+}
+main .path {
+  margin: 20px 0;
+}
+main .path a::after {
+  background: url(../images/navigate_next.png);
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  content: "";
+}
+main .path a:last-child::after {
+  display: none;
+}
+main .path a {
+  color: #00a0e2;
+}
+main .path a em {
+  font-weight: 700;
+}
+main .order {
+  display: flex;
+  justify-content: space-between;
+}
+main .order .product_img {
+  width: 500px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+main .order .product_img .big img {
+  width: 100%;
+}
+main .order .product_img .thum {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+}
+main .order .product_img .thum a {
+  width: 150px;
+}
+main .order .product_img .thum a img {
+  width: 100%;
+}
+main .order .order_contents {
+  width: calc(100% - 550px);
+}
+main .order .order_contents h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+main .order .order_contents p {
+  margin: 20px 0;
+}
+main .order .order_contents p del {
+  font-size: 1.625rem;
+}
+main .order .order_contents .price {
+  font-size: 1.625rem;
+  font-weight: 700;
+  border-bottom: 1px solid #222;
+  width: 100%;
+  padding-bottom: 20px;
+}
+main .order .order_contents .deliver em {
+  font-weight: 700;
+  margin-right: 10px;
+}
+main .order .order_contents h2 {
+  font-size: 1.625rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+main .order .order_contents #brands {
+  width: 100%;
+  height: 50px;
+}
+main .order .order_contents #galaxy {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+main .order .order_contents #iphone {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+}
+main .order .order_contents .order_list {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 50px 50px 150px;
+  border-bottom: 1px solid #222;
+  border-top: 1px solid #222;
+}
+main .order .order_contents .order_list #order_num {
+  width: 50px;
+}
+main .order .order_contents .order_list em {
+  font-weight: 700;
+  text-align: right;
+}
+main .order .order_contents .order_list em span {
+  font-weight: 700;
+}
+main .order .order_contents .total {
+  margin-top: 20px;
+}
+main .order .order_contents .total h2 {
+  font-size: 1.125rem;
+}
+main .order .order_contents .btn {
+  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 32%);
+}
+main .order .order_contents .btn #buy img {
+  width: 100%;
+}
+main .order .order_contents .btn #cart img {
+  width: 100%;
+}
+main .order .order_contents .btn #wish img {
+  width: 100%;
+}/*# sourceMappingURL=product.css.map */
