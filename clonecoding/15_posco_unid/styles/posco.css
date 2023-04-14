@@ -1,0 +1,86 @@
+body, html {
+  height: 300vh;
+}
+
+header::before {
+  content: "";
+  display: block;
+  background: #fff;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -100;
+  transform: translateX(-50%);
+}
+
+header {
+  background: aqua;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  width: 1400px;
+  z-index: 999;
+}
+header nav {
+  background: aqua;
+}
+header nav .gnb {
+  height: 100px;
+  display: flex;
+}
+header nav .gnb > li {
+  display: flex;
+  position: relative;
+  font-size: 1.3rem;
+}
+header nav .gnb > li > a {
+  width: 300px;
+  line-height: 100px;
+}
+header nav .gnb > li .sub {
+  background: yellow;
+  height: 300px;
+  width: 100%;
+  top: 100px;
+  position: absolute;
+}
+header nav .gnb > li .sub li {
+  text-align: left;
+  font-size: 1.2rem;
+  padding: 10px 0;
+}
+header nav .gnb > li .sub li a {
+  display: block;
+}
+
+main::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #0d278d, transparent, #0f6e38);
+}
+
+main {
+  background: url(../images/posco/s01_bg.jpg) center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+main h1 {
+  font-size: 4rem;
+  position: relative;
+  z-index: 220;
+}/*# sourceMappingURL=posco.css.map */
