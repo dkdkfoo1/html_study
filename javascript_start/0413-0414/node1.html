@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node 관계연습</title>
+    <style>
+        * {padding: 20px; margin: 10px;}
+        #wrap {background: aqua;}
+        #wrap #box {background: yellow;}
+        #wrap #box p {background: pink;}
+        #result {background: lightblue;}
+        #result .test {background: lightgreen;}
+        .a {
+            border: 5px solid rebeccapurple;
+            transform: translateY(50px);
+            transform: rotate(20deg);
+        }
+        .b {animation: opacity 0.5s linear 0.5s infinite;}
+        .c {animation: translate 1s linear 0.5s infinite;}
+        @keyframes opacity {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        @keyframes translate {
+            0% {transform: translateY(-50px) scale(0);background: none;}
+            100% {transform: translateY(50px) scale(2); background: black;}
+        }
+        </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="box">
+            <p class="first">first</p>
+            <p class="second">second</p>
+            <p class="last">last</p>
+        </div>
+    </div>
+    <div id="result">
+        <p class="test">test</p>
+    </div>
+
+    <script src="./script/node5.js"></script>
+</body>
+</html>
