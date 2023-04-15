@@ -1,3 +1,24 @@
+@-webkit-keyframes height {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(300px);
+  }
+}
+@keyframes height {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(300px);
+  }
+}
+.a {
+  -webkit-animation: height 1s;
+          animation: height 1s;
+}
+
 body, html {
   height: 300vh;
 }
@@ -46,7 +67,7 @@ header nav .gnb > li > a {
   line-height: 100px;
 }
 header nav .gnb > li .sub {
-  background: yellow;
+  background: #fff;
   height: 300px;
   width: 100%;
   top: 100px;
@@ -59,6 +80,15 @@ header nav .gnb > li .sub li {
 }
 header nav .gnb > li .sub li a {
   display: block;
+}
+header nav .bg {
+  background: pink;
+  height: 300px;
+  width: 300%;
+  top: 100px;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: -10;
 }
 
 main::after {
