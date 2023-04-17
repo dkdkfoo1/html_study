@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll-by</title>
+    <style>
+        #box {
+            width: 500px; height: 250px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            font-size: 5rem;
+        }
+        #box > div {width: 500px; height: 250px;}
+        #box .a {background: cornflowerblue;}
+        #box .b {background: seagreen;}
+        #box .c {background: #555;}
+        #box .d {background: pink;}
+    </style>
+</head>
+<body>
+    
+    <button type="button" id="top">위로</button>
+    <button type="button" id="btm">아래로</button>
+    <div id="box">
+        <div class="a">형님</div>
+        <div class="b">많이 힘드시죠?</div>
+        <div class="c">괜찮아요</div>
+        <div class="d">어짜피 계속 힘들거니까</div>
+    </div>
+
+    <script>
+
+        const topp = document.querySelector('#top')
+        const btmm = document.querySelector('#btm')
+        const boxx = document.querySelector('#box')
+        console.log(topp, btmm, boxx)
+        btmm.addEventListener('click',()=>{
+            boxx.scrollBy(0, 250)
+        })
+        topp.addEventListener('click',()=>{
+            boxx.scrollBy(0, -250)
+        })
+
+    </script>
+</body>
+</html>

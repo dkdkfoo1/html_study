@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll-by</title>
+    <style>
+        #wrap {
+            width: 500px; height: 250px;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+        #box {
+            width: max-content;
+            display: flex;
+            font-size: 5rem;
+        }
+        #box > div {width: 500px; height: 250px;}
+        #box .a {background: cornflowerblue;}
+        #box .b {background: seagreen;}
+        #box .c {background: #555;}
+        #box .d {background: pink; color: red;}
+    </style>
+</head>
+<body>
+    
+    <button type="button" id="top">좌</button>
+    <button type="button" id="btm">우</button>
+    <div id="wrap">
+        <div id="box">
+            <div class="a">형님</div>
+            <div class="b">괄약근</div>
+            <div class="c">제발</div>
+            <div class="d">꽉조이세요</div>
+        </div>
+    </div>
+
+    <script>
+
+        const topp = document.querySelector('#top')
+        const btmm = document.querySelector('#btm')
+        const boxx = document.querySelector('#box')
+        const wrap = document.querySelector('#wrap')
+        console.log(topp, btmm, boxx)
+        btmm.addEventListener('click',()=>{
+            wrap.scrollBy(500, 0)
+        })
+        topp.addEventListener('click',()=>{
+            wrap.scrollBy(-500, 0)
+        })
+
+    </script>
+</body>
+</html>
