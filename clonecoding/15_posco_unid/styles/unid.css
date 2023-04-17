@@ -1,0 +1,113 @@
+#h_bg {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+#h_bg header {
+  width: 1400px;
+  margin: 0 auto;
+  height: 120px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+#h_bg header nav {
+  display: flex;
+}
+#h_bg header nav .gnb > li {
+  padding-right: 50px;
+  display: flex;
+  justify-content: center;
+}
+#h_bg header nav .gnb > li > a {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: block;
+  line-height: 120px;
+}
+#h_bg header nav .gnb .sub1 {
+  position: absolute;
+  top: 120px;
+  height: 50vh;
+}
+#h_bg header nav .gnb .sub1 li {
+  font-size: 1.1rem;
+  line-height: 2;
+}
+#h_bg header nav .gnb .sub1 li a {
+  display: block;
+}
+#h_bg header nav .gnb .sub1 li .sub2 li {
+  border-bottom: 1px dashed #ccc;
+}
+#h_bg header nav .gnb .sub1 li .sub2 li a {
+  font-size: 0.8rem;
+  color: #888;
+}
+#h_bg header .nav_bg {
+  background: #fff;
+  width: 300%;
+  position: absolute;
+  z-index: -10;
+  height: 50vh;
+  top: 120px;
+  left: -2000px;
+}
+#h_bg header .bar {
+  display: flex;
+  flex-flow: column wrap;
+  width: 70px;
+}
+#h_bg header .bar span {
+  content: "";
+  display: block;
+  height: 8px;
+  background-color: #003a12;
+}
+#h_bg header .bar span:nth-child(1) {
+  transform: skewX(-45deg) translateX(0);
+}
+#h_bg header .bar span:nth-child(2) {
+  margin: 5px 0;
+  transform: skewX(-45deg) translateX(-5px);
+}
+#h_bg header .bar span:nth-child(3) {
+  transform: skewX(-45deg) translateX(-10px);
+}
+
+main {
+  margin: 0 auto;
+}
+main .visual {
+  background: url(../images/unid/bg.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+main .visual .txt {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+main .visual .txt span {
+  font-size: 3rem;
+  color: #fff;
+  display: block;
+  line-height: 2;
+  font-weight: 600;
+}
+main .visual .right_img img:first-child {
+  position: absolute;
+  top: 50%;
+  right: 17.5%;
+  transform: translate(-50%, -50%);
+}
+main .visual .right_img img:last-child {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=unid.css.map */
