@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client1</title>
+    <style>
+        body,html {
+            height: 300vh;
+            background: linear-gradient(rgb(176, 233, 233), beige, rgb(255, 255, 150), pink, rgb(255, 200, 180));
+        }
+        #pst {
+            padding: 50px; position: relative; top:200px;
+        }
+    </style>
+</head>
+<body>
+    <button type="button" id="pst">위치</button>
+    <script>
+
+        const pst = document.querySelector('#pst')
+        console.log(pst)
+
+        window.addEventListener('scroll',()=>{
+            console.log('------------------------')
+            // console.log(`offsetTop=>${pst.offsetTop}`)
+            console.log(`client=>${pst.getBoundingClientRect().y}`)
+            if(pst.getBoundingClientRect().top > 0){ //음수가 되면 뷰포트 영역 밖으로 나가는 거임. 그래서 0보다 클 때. 로 기준
+                pst.style.background = 'rgb(8,555,655)'
+            }
+        })
+
+    </script>
+</body>
+</html>

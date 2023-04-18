@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interior-2</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        header {position: fixed; left: 0; top: 0; width: 100%;}
+        header h1 {
+            background: rgba(255,255,255,0.5);
+            text-align: center; line-height: 100px;
+        }
+        header nav {background: #fff; text-align: center;}
+        header nav a {
+            display: inline-block; line-height: 50px;
+            color: #222; padding: 0 20px;
+        }
+        main section {height: 100vh; background-size: cover; background-position: center;}
+        main .s1 {background-image: url(./images/bg1.jpg);}
+        main .s2 {background-image: url(./images/bg2.jpg);}
+        main .s3 {background-image: url(./images/bg3.jpg);}
+        main .s4 {background-image: url(./images/bg4.jpg);}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interior view</h1>
+        <nav>
+            <a href="#">a</a>
+            <a href="#">b</a>
+            <a href="#">c</a>
+            <a href="#">d</a>
+        </nav>
+    </header>
+    <main>
+        <section class="s1"></section>
+        <section class="s2"></section>
+        <section class="s3"></section>
+        <section class="s4"></section>
+    </main>
+
+    <script>
+
+        //1. 특정 위치까지 스크롤 내릴 시 header 이동 (nav유지)
+        //2. nav-a 클릭 시 각 section 영역 이동
+        const header = document.querySelector('header')
+        const nav = document.querySelectorAll('nav a')
+        const section = document.querySelectorAll('section')
+        console.log(header, nav, section)
+
+        header.style.transition = 'all 0.3s'
+        window.addEventListener('scroll', ()=>{
+            if(window.pageYOffset >= section[1].offsetTop -200){
+                header.style.transform ='translateY(-100px)' 
+                //header {transform:translateY(-100px)}
+            }else{
+                header.style.transform = 'translateY(0)'
+            }
+        })
+
+        nav.forEach((target,index)=>{
+            target.addEventListener('click',(e)=>{
+                e.preventDefault() //href 막기
+                window.scrollTo(0,section[index].offsetTop)
+            })
+        })
+
+    </script>
+</body>
+</html>

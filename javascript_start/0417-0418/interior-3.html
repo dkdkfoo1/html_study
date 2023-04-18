@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interior-2</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        body,html {scroll-behavior: smooth;}
+        header {position: fixed; left: 0; top: 0; width: 100%;}
+        header h1 {
+            text-align: left; line-height: 100px; margin-left: 50px; 
+        }
+        header nav {text-align: left;}
+        header nav a {
+            display: inline-block; 
+            color: #222; padding: 0 20px;
+        }
+        header nav a:first-child {margin-left: 50px;}
+        main section {height: 100vh; background-size: cover; background-position: center;}
+        main .s1 {background-image: url(./images/bg1.jpg);}
+        main .s2 {background-image: url(./images/bg2.jpg);}
+        main .s3 {background-image: url(./images/bg3.jpg);}
+        main .s4 {background-image: url(./images/bg4.jpg);}
+
+        div {position: fixed; top: 40%; left: 1%;}
+        div p {
+            width: 20px; height: 3px; background: #222;
+            margin: 20px 0; z-index: 15;
+        }
+        div .bar_active {
+            background: #fff; width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interior view</h1>
+        <nav>
+            <a href="#">a</a>
+            <a href="#">b</a>
+            <a href="#">c</a>
+            <a href="#">d</a>
+        </nav>
+    </header>
+    <main>
+        <section class="s1"></section>
+        <section class="s2"></section>
+        <section class="s3"></section>
+        <section class="s4"></section>
+
+        
+    </main>
+    <div>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <script>
+
+        //1. 특정 위치까지 스크롤 내릴 시 header 이동 (nav유지)
+        //2. nav-a 클릭 시 각 section 영역 이동
+        const header = document.querySelector('header')
+        const nav = document.querySelectorAll('nav a')
+        const section = document.querySelectorAll('section')
+        console.log(header, nav, section)
+        const bar = document.querySelectorAll('div p')
+        console.log(bar)
+
+        for(let i of bar){i.style.transition = 'all 0.3s'}
+
+        bar_reset(0) //제일 처음에 1번이 보이니까 대입값은 첫번째 0 이라는 소리 (처음 활성화 대상)
+        //초기값 bar 선언
+
+        window.addEventListener('scroll',()=>{
+        if(window.pageYOffset >= section[0].offsetTop){bar_reset(0)} //스크롤 위치가 섹션 위치보다 크거나 같다면 bar_reset을 대입하라는 뜻
+        if(window.pageYOffset >= section[1].offsetTop -200){bar_reset(1)}
+        if(window.pageYOffset >= section[2].offsetTop -200){bar_reset(2)}
+        if(window.pageYOffset >= section[3].offsetTop -200){bar_reset(3)}
+        })
+        function bar_reset(num){
+            for(let i of bar){i.classList.remove('bar_active')}
+            bar[num].classList.add('bar_active')
+        }
+
+        nav.forEach((target,index)=>{
+            target.addEventListener('click',(e)=>{
+                e.preventDefault()
+                window.scrollTo(0,section[index].offsetTop)
+            })
+        })
+        
+    </script>
+</body>
+</html>
