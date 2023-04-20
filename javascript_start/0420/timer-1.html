@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer-1</title>
+    <style>
+        body {
+            background: rgb(46, 44, 44);
+        }
+    </style>
+</head>
+<body>
+    
+
+        <script>
+
+            //setInterval 일정시간 반복 타이머 함수
+            //1~5, 1~5, 1~5 반복 타이머 
+            let num = 0
+            setInterval(()=>{
+                if(num > 5){num = 0}
+                console.log('setInterval'+num)
+                num++ //증감연산자 붙힐 때 주의해야함. 시작은 0인데 1부터 출력하고 싶으면 증감연산자보다 위에 써야함
+            },500)
+
+        </script>
+</body>
+</html>

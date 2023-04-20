@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer-3</title>
+    <style>
+        * {box-sizing: border-box; margin: 0; padding: 0;}
+        body {background: rgb(116, 116, 116);}
+        #slider_wrap {height:200px; overflow: hidden;}
+        #slider_wrap #slider_container {
+            transition: transform 0.5s;
+        }
+        #slider_wrap #slider_container .slide {line-height: 200px; width: 700px; text-align: center; font-size: 5rem;}
+        #slider_wrap #slider_container .slide1 {background: aqua;}
+        #slider_wrap #slider_container .slide2 {background: palevioletred;}
+        #slider_wrap #slider_container .slide3 {background: darkolivegreen;}
+    </style>
+</head>
+<body>
+    <div id="slider_wrap">
+        <div id="slider_container">
+            <div class="slide slide1">형님</div>
+            <div class="slide slide2">그건</div>
+            <div class="slide slide3">아닌듯</div>
+        </div>
+    </div>
+        <script>
+            //이번엔 세로 슬라이드
+            const slide = document.querySelector('#slider_container')
+            let num = 0
+            let timer = setInterval(slide_set, 1000)
+
+            function slide_set(){
+                num++
+                if(num>2){num=0}
+                slide.style.transform = `translateY(-${num*200}px)`
+            }
+
+        </script>
+</body>
+</html>

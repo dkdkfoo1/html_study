@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer-5</title>
+    <style>
+        body {
+            height: 500vh;
+            background: linear-gradient(rgb(236, 236, 169),rgb(151, 223, 223), rgb(163, 163, 140), rgb(180, 139, 146));
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+
+        let num = 0
+        let timer = setTimeout(set,1000)
+        let timer2 = setTimeout(scroll,200)
+
+        function scroll(){
+            window.scrollTo(0,0) // 새로고침시, 화면 맨 위로 올라가지는 법
+        }
+
+        function set(){
+            num++
+            console.log(num)
+        }
+
+    </script>
+</body>
+
+</html>

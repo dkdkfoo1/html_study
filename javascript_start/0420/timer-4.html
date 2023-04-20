@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer-4</title>
+    <style>
+        * {box-sizing: border-box; margin: 0; padding: 0;}
+        body {background: rgb(116, 116, 116);}
+        #slider_wrap {}
+        #slider_wrap #slider_container {
+            position: relative; 
+            /* 제자리 겹치게 만들기 */
+        }
+        #slider_wrap #slider_container .slide {
+            position: absolute; top:0; left: 0; 
+            /* 제자리 겹치게 만들기 */
+            line-height: 200px; 
+            width: 700px; text-align: center; font-size: 5rem;
+            /* 오퍼시티 걸어놔서 아무것도 보이지 않게 하기 */
+            opacity: 0; transition: opacity 0.5s;
+        }
+        #slider_wrap #slider_container .slide1 {background: aqua; }
+        #slider_wrap #slider_container .slide2 {background: palevioletred; }
+        #slider_wrap #slider_container .slide3 {background: darkolivegreen; }
+    </style>
+</head>
+<body>
+    <div id="slider_wrap">
+        <div id="slider_container">
+            <div class="slide slide1">1</div>
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+        </div>
+    </div>
+        <script>
+            //opacity와 position이용한 슬라이드
+            const slide = document.querySelectorAll('.slide')
+            // 변수는 이번엔 .slide로 만들어준다. (부모말고 자식.) 
+            let num = 0
+            let timer = setInterval(slide_timer, 1000)
+            slide[0].style.opacity = 1
+
+            function slide_timer(){
+                num++
+                if(num>2){
+                    num=0
+                    for(let i of slide){i.style.opacity = 0}
+                }
+                slide[num].style.opacity = 1
+            }
+
+        </script>
+</body>
+</html>

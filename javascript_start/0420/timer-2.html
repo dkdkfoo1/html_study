@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer-2</title>
+    <style>
+        * {box-sizing: border-box; margin: 0; padding: 0;}
+        body {background: rgb(116, 116, 116);}
+        #slider_wrap {
+            border: 5px solid #000; margin: 0 auto;
+            width: 700px; 
+            overflow: hidden;
+            /* 애들을 가지고 있는 wrap에게 700안에서만 보이도록 여기에 overflow:hidden을 써주면 하나만 보인다 */
+        }
+        #slider_wrap #slider_container {
+            display: flex; width: max-content;
+            transition: transform 0.5s;
+            /* max-content를 사용하면 가로 스크롤 생김. flex만 했을 때는 가변형이라서 스크롤이 안생김 */
+            /* transform: translateX(-0px);
+            transform: translateX(-700px);
+            transform: translateX(-1400px); */
+        }
+        #slider_wrap #slider_container .slide {line-height: 200px; width: 700px; text-align: center; font-size: 5rem;}
+        #slider_wrap #slider_container .slide1 {background: aqua;}
+        #slider_wrap #slider_container .slide2 {background: palevioletred;}
+        #slider_wrap #slider_container .slide3 {background: darkolivegreen;}
+    </style>
+</head>
+<body>
+    <!-- 이렇게 그룹을 단계별로 설정해야 함. -->
+
+    <div id="slider_wrap"><!-- 하나로 모아서 가리는 곳 -->
+        <div id="slider_container"><!-- 정렬하는 곳 -->
+            <div class="slide slide1">1</div>
+            <div class="slide slide2">2</div>
+            <div class="slide slide3">3</div>
+        </div>
+    </div>
+        <script>
+
+            const slide = document.querySelector('#slider_container')
+            console.log(slide.firstElementChild.offsetWidth) // 700 첫번째 자식 노드의 너비 
+            console.log(slide.children[0].offsetWidth) // 700 첫번째 자식 노드의 너비 -> 이렇게 써도 됨
+            let slide_w = slide.children[0].offsetWidth
+            console.log(slide.children.length) //슬라이드의 갯수가 바뀔 수도 있으니 갯수가 바뀔 때마다 숫자를 바꾸지 않아도 되도록 갯수계산하는 법.
+            console.log(slide.childElementCount)
+            let count = slide.children.length-1
+
+            let num = 0
+            setInterval(()=>{
+                //1201201201..... -> 첫 화면에 이미 0번 순서 슬라이드가 나타나 있기 때문에 1부터 시작하고 012012순서
+                num++
+                if(num > count){num = 0}
+                console.log(num)
+                slide.style.transform = `translateX(-${slide_w*num}px)` //700x0-> 700x1 -> 700x2 ....... 
+            },1000)
+
+        </script>
+</body>
+</html>
