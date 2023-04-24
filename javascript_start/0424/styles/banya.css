@@ -1,0 +1,69 @@
+        .bg_scale {background-size: 100% !important;}
+        /* 임폴턴트 적용해서 제일 적용 먼저 하게 시킴 */
+        
+        /* font-family: 'Castoro Titling', cursive; 
+        font-family: 'Poltawski Nowy', serif;
+        font-family: 'Noto Serif KR', serif;
+        */
+        button {
+            position: fixed; right: 15px; bottom: 15px;
+            border: 2px solid #fff; padding: 10px; color: #fff;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-family: 'Noto Serif KR', serif; 
+            z-index: 11;
+        }
+        header {
+            position: fixed; top: 0; left: 0;
+            color: #fff; padding:30px 50px; width: 100%;
+            display: flex; justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+        header h1 {}
+        header p a {
+            color: #fff; font-size: 1.2rem;
+            font-family: 'Noto Serif KR', serif;
+        }
+        main {}
+        main .wrap {width: 100%; height: 100vh; background-position: center; background-size: cover;}
+        main .wrap1 {}
+        main .wrap2 {}
+        main .wrap3 {}
+        main .wrap4 {}
+        main .wrap .bg1 {
+            background-image: url(../images/main_bg_new2.jpg);
+        }
+        main .wrap .bg2 {background-image: url(../images/main_con2_bg.jpg); background-attachment: fixed;}
+        main .wrap .bg3 {background-image: url(../images/main_con3_bg.jpg);}
+        main .wrap .bg4 {background-image: url(../images/main_con5_bg-.jpg);background-attachment: fixed;}
+        main .wrap .bg {
+            transition: all 1s;
+            /* 전체 트랜지션 적용 */
+            background-repeat: no-repeat; background-size: 120%;
+            background-position: center; height: 100%;
+        }
+        main .wrap .bg1 {background-size: 180%;}
+        /* 백그라운드 사이즈를 커버 말고 더 큰 퍼센테지로 주니까 크게 되는군! */
+        main .wrap .bg h1 {
+            font-size: 3rem; font-weight: 600; 
+            padding-top: 5%;
+            color: #fff; 
+            padding-left: 10%;
+            font-family: 'Poltawski Nowy', serif;
+        }
+        main .wrap .bg p {
+            line-height: 2;
+            padding: 20px;
+            color: #fff; 
+            padding-left: 10%;
+            font-family: 'Noto Serif KR', serif;
+        }
+        main .wrap .bg1 h1 {line-height: 100vh; text-align: center; padding-left: 0; padding-top: 0;}
+        footer {
+            height: 120px;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: space-around; align-items: center;
+        }
