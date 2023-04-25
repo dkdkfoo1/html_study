@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper-2</title>
+    <!-- swiper cdn(필수!!) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js" integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css" integrity="sha512-0x5peylECh6ad58xDrjrNZL87Zhg9rdda76yOOHrfGr41VSEwUNmYaK72U/JVScMbSWG1n4Vj35LGmq8ggsqaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- design css -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+
+        /* swiper plugin 적용시 slide css를 미리 작성하지 않는다. */
+        /* swiper css가 적용하는 css와 충돌방지를 위해 슬라이드 
+        디자인 시에는 반드시 서로 비교하면서 동시 디자인한다. */
+        .swiper {width: 1000px;}
+        /* swiper 정보에서 여기에 크기 주라고 했으니 그대로 해야함. (원래는 이미지 바로 윗 부모에게 주는데) */
+        /* margin:0 auto, overflow:hidden 기본값 */
+        .swiper .swiper-wrapper {}
+        /* transition, transform 기본값 */
+        .swiper .swiper-wrapper .swiper-slide {
+            height: 300px;
+            /* 기본이 퍼센트로 되어있어서 자식에 따라 크기가 달라져서 높낮이가 달라진다
+            하지만 그 위에 px값으로 바꿔주니 정확한 값으로 나온다. */
+        }
+        /* width, height 100%, position:relative 기본값 */
+        .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+        .swiper .swiper-wrapper .slide1 {
+            background: url(./images/bnr1.jpg); padding: 20px;
+            background-size: cover;
+            /* 커버 설정을 해야 고래가 다보임. 개별 설정 해줘야함. */
+        }
+        .swiper .swiper-wrapper .slide1 * {color: #fff;}
+        .swiper .swiper-wrapper .slide1 h1 {
+            font-weight: 600; font-size: 2rem; line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .swiper .swiper-wrapper .slide1 p {font-size: 1.2rem;}
+
+    </style>
+</head>
+<body>
+    <!-- s:swiper main -->
+    <div class="swiper">
+        <!-- swiper slide wrap -->
+        <div class="swiper-wrapper">
+            <!-- s:slide -->
+            <div class="swiper-slide slide1">
+                <h1>4월의 마지막 혜택<br>로그인하고 받아가세요</h1>
+                <p>2,000p 단 하루!</p>
+            </div>
+            <div class="swiper-slide slide2"><img src="./images/bnr2.jpg" alt="">slide2</div>
+            <div class="swiper-slide slide3"><img src="./images/bnr3.jpg" alt="">slide3</div>
+            <!-- e:slide -->
+        </div>
+    </div>
+    <!-- e:swiper main -->
+</body>
+
+
+<script>
+
+    // 기본 swiper 문법
+    //const 변수명 = new Swiper('적용대상',{속성:값})
+
+    //적용대상은 swiper의 가장 큰 부모 대상 (swiper-wrapper의 부모)
+    const swiper1 = new Swiper('.swiper',{
+        //방향설정 direction:'horizontal', 'vertical'
+        grabCursor: true,
+        effect:'flip',
+        // cubeEffect: {
+        // shadow: true,
+        // slideShadows: true,
+        // shadowOffset: 20,
+        // shadowScale: 1.5,
+        // } ,
+        // 요즘 많이 사용하는 서서히 바뀌는 효과 cube는 돌아감 
+        // direction:'horizontal',
+        autoplay:{
+            delay:1000,
+            // 자동으로 바뀜! 크크 
+            // disableOnInteraction:true
+            //마우스 올라가면 일시정지
+        },
+        loop:true
+        // 이거 쓰면 자연스럽게 옆으로 계속 슬라이드 바뀜 바로 1번으로 안가고 
+        
+    })
+
+</script>
+</html> 

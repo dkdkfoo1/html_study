@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper-3</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js" integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css" integrity="sha512-0x5peylECh6ad58xDrjrNZL87Zhg9rdda76yOOHrfGr41VSEwUNmYaK72U/JVScMbSWG1n4Vj35LGmq8ggsqaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+
+        .swiper {width: 1000px;}
+        /* margin:0 auto, overflow:hidden 기본값 */
+        .swiper .swiper-wrapper {}
+        /* transition, transform 기본값 */
+        .swiper .swiper-wrapper .swiper-slide {
+            height: 300px;
+        }
+        /* width, height 100%, position:relative 기본값 */
+        .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+        .slide1, .slide2 {background-size: cover;}
+        h1 {font-size: 3rem; color: #fff; line-height: 1.2;margin-left: 20px; margin-top: 20px;}
+        p {font-size: 1.2rem; line-height: 2;  margin-left: 100px;}
+        a {
+            font-size: 1.5rem; border: 3px solid #fff;
+            background-color: #fff; border-radius: 20px; padding: 10px 5px;
+            display: inline-block;
+            margin-top: 60px;margin-left: 20px;
+            }
+        .slide2 a {margin-top: 23px;}
+        .swiper .swiper-wrapper .slide1 {background-image: url(./images/bnr1.jpg);}
+        .swiper .swiper-wrapper .slide2 {background-image: url(./images/bnr2.jpg);}
+    </style>
+</head>
+<body>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1">
+                <h1>4월의 마지막 혜택<br>로그인하고 받아가세요</h1>
+                <p>2,000p 단 하루!</p>
+                <a href="#">혜택 받으러 가기</a>
+            </div>
+            <div class="swiper-slide slide2">
+                <h1>다가오는 가정의 달, <br> 숨기지 말고 표현하세요!</h1>
+                <p>LOVE & thanks</p>
+                <p>소중한 마음 전하기</p>
+                <a href="#">가정의 달 선물 구입하기</a>
+            </div>
+            <div class="swiper-slide slide3"><img src="./images/bnr3.jpg" alt="">slide3</div>
+        </div>
+    </div>
+</body>
+
+
+<script>
+
+const swiper1 = new Swiper('.swiper',{
+        grabCursor: true,
+        effect:'fade',
+        // autoplay:{
+        //     delay:1000,
+        // },
+        // loop:true
+    })
+
+</script>
+</html> 

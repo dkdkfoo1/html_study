@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>swiper-5</title>
+    <!-- swiper cdn(필수!!) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.min.js" integrity="sha512-hJrV+LKHbu+Hxkn/+ZwGOCMUkap0ZfjJbca9WT38z69+MYmRzMlvUd401TOs1b4byAm4fGDESpEcCbG2A6cibQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.4/swiper-bundle.css" integrity="sha512-0x5peylECh6ad58xDrjrNZL87Zhg9rdda76yOOHrfGr41VSEwUNmYaK72U/JVScMbSWG1n4Vj35LGmq8ggsqaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- design css -->
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+
+        .swiper {width: 1000px;}
+        /* swiper 정보에서 여기에 크기 주라고 했으니 그대로 해야함. (원래는 이미지 바로 윗 부모에게 주는데) */
+        /* margin:0 auto, overflow:hidden 기본값 */
+        .swiper .swiper-wrapper {}
+        /* transition, transform 기본값 */
+        .swiper .swiper-wrapper .swiper-slide {}
+        /* width, height 100%, position:relative 기본값 */
+        .swiper .swiper-wrapper .swiper-slide img {width: 100%;}
+
+        .swiper .swiper-pagination-bullet {width: 0;}
+        .swiper .swiper-pagination-bullet-active {background: #fff; color: red;}
+        /* 활성화 기준 버튼 */
+
+    </style>
+</head>
+<body>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide1"><img src="./images/bnr1.jpg" alt=""></div>
+            <div class="swiper-slide slide2"><img src="./images/bnr2.jpg" alt=""></div>
+            <div class="swiper-slide slide3"><img src="./images/bnr3.jpg" alt=""></div>
+            <div class="swiper-slide slide3"><img src="./images/bnr3.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</body>
+
+
+<script>
+
+    const swiper1 = new Swiper('.swiper',{
+        pagination:{
+            el:'.swiper-pagination',
+            type:'bullets',
+            clickable:true,
+            // a태그가 아니어도 누를수 있도록 선택 가능함.
+            renderBullet:function(i, name){
+                return `<span class="bullets_span ${name}">${i+1}</span>`
+            }
+            // 예를 들어 위의 예시처럼 bullets_span 이라는 클래스 네임을 넣어서 css에서 꾸미기가 가능하다. 
+            // 반환시키기 return
+            //0부터 시작하니까 0,1,2,3으로 나온다, 그래서 +1
+            //선택하고 싶으면 a태그를 넣어줄 수도 있다. a href="#"
+            //dynamicBullets:true
+        }
+    })
+
+</script>
+</html> 
